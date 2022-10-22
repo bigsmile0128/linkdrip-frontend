@@ -165,7 +165,7 @@ function Dashboard() {
                 <div className='text-center m-auto'>
                     <div className='md:mt-10   rounded-lg px-4'>
                         <p className='text-[28px] md:text-[35px] text-gray-700 text-left font-semibold'>Make sure your link looks</p>
-                        <p className='text-[28px] md:text-[35px] md:-mt-4 text-gray-800 text-left font-semibold'>great on social media</p>
+                        <p className='text-[28px] md:text-[35px] md:-mt-4 text-gray-700 text-left font-semibold'>great on social media</p>
                         <p className='text-[15px] md:text-[18px]  text-gray-500 text-left font-semibold'>Change how your link will appear on social media and</p>
                         <p className='text-[15px] md:text-[18px]  text-gray-500 text-left font-semibold'> in article embeds in a few simple steps.</p>
                     </div>
@@ -231,27 +231,98 @@ function Dashboard() {
             </div>
 
             {/* domain sections */}
-            <div className='w-full md:w-2/3 m-auto grid grid-cols-1 place-items-center md:grid-cols-3 px-20 mt-2 md:mt-10'>
-                <div className='flex items-center gap-2 hover:scale-105 duration-700 ease-in-out'>
+            <div className='w-full md:w-2/3 m-auto grid grid-cols-1 place-items-center md:grid-cols-3 px-20 mt-10 md:mt-10'>
+                <div className='flex items-center gap-2 hover:scale-105 duration-700 ease-in-out  md:mt-0'>
                     <img src='./img/domain-1.png' />
                     <div>
                         <p className='text-gray-700  text-[18px] md:text-[20px] font-semibold'>Custom domain</p>
                     </div>
                 </div>
 
-                <div className='flex items-center gap-2 hover:scale-105 duration-700 ease-in-out'>
+                <div className='flex items-center gap-2 hover:scale-105 duration-700 ease-in-out mt-5 md:mt-0'>
                     <img src='./img/domain-2.png' />
                     <div>
                         <p className='text-gray-700  text-[18px] md:text-[20px] font-semibold'>Custom scripts</p>
                     </div>
                 </div>
 
-                <div className='flex items-center gap-2 hover:scale-105 duration-700 ease-in-out'>
+                <div className='flex items-center gap-2 hover:scale-105 duration-700 ease-in-out mt-5 md:mt-0'>
                     <img src='./img/domain-3.png' />
                     <div>
                         <p className='text-gray-700  text-[18px] md:text-[20px] font-semibold'>LinkDrip Pixel</p>
                     </div>
                 </div>
+            </div>
+
+            {/* section */}
+            {/* Metadata Section */}
+            <div className='w-full md:w-2/3 grid grid-col-1 md:px-20 md:grid-cols-2 m-auto md:mt-40 p-2'>
+                <div className='text-center md:pl-20'>
+                    <div className='rounded-lg px-4'>
+                        <img src='./img/domain-1.png'/>
+                        <p className='text-[28px] md:text-[35px] text-gray-700 text-left font-semibold'>Build UTM tags directly</p>
+                        <p className='text-[28px] md:text-[35px] md:-mt-4 text-gray-700 text-left font-semibold'>into the link</p>
+                        <p className='text-[15px] md:text-[18px]  text-gray-500 text-left font-semibold'>Make it easy to keep analytics organized for the</p>
+                        <p className='text-[15px] md:text-[18px]  text-gray-500 text-left font-semibold'>destination link, by including UTM tags in it.</p>
+                    </div>
+                </div>
+                <div className='m-auto'>
+                    <img src='./img/dashboard-1-4.jpg' className='absolute w-[80%] md:w-auto'/>
+                    <img src='./img/dashboard-1-2.jpg' className='relative w-[80%] md:w-auto -left-[50px] top-[200px] md:-left-[100px] md:top-[240px]' />
+                </div>
+            </div>
+            
+            <div className='grid place-items-center mt-[350px]'>
+                <button className='w-[92%] md:w-auto border border-gray-200 text-white bg-[#9B7BF7]  px-20 md:px-14 py-4 md:py-6 rounded-md  font-normal text-[18px]  hover:text-white hover:scale-105 hover:bg-[#ED64A6] duration-500 ease-in-out'>Get Early Access</button>
+            </div>
+
+            {/* background sections */}
+            <div className='bg-[#9B7BF7] w-full h-[850px] md:h-[1250px]'>
+                {/* Simple yet text section */ }
+                <div className='w-full md:w-2/3 m-auto mt-20 md:mt-40 md:pt-40'>
+                    <p className='text-white text-[45px] md:text-[58px] font-semibold text-center'>Start sharing your links in a</p>
+                    <p className='text-white text-[45px] md:text-[58px] font-semibold text-center'>new, more intentional, way</p>
+                    <p className='text-white text-[18px] md:text-[20px]  font-semibold text-center md:mt-4'>LinkDrip supports a set of advanced use cases, such as adding your custom domain, injecting custom</p>
+                    <p className='text-white text-[18px] md:text-[20px]  font-semibold text-center'>JavaScript into your link, and using the LinkDrip Pixel.</p>
+                </div>
+                <div className='grid place-items-center mt-40'>
+                    <button className='w-[92%] md:w-auto border border-gray-200 font-bold text-[#9B7BF7] bg-white  px-20 md:px-14 py-4 md:py-6 rounded-md text-[18px]  hover:text-white hover:scale-105 hover:bg-[#ED64A6] duration-500 ease-in-out'>Get Early Access</button>
+                </div>
+
+                {/* Dashboard Slide image section */}
+                <div className='md:w-2/3 m-auto'>
+                    <div className='md:ml-20 mt-5 md:mt-10 ' id='dashboardImage'>
+                        <img src='./img/dashboard-1.jpg ' className='absolute p-2 md:p-0 ' id='dashboard_1'/>
+                        <img src='./img/dashboard-1-1.jpg' className='relative p-2 md:p-0 -left-[10px] top-[60px] w-[50%] md:w-auto md:-left-[100px] md:top-[230px]' id="dashboard_1_1"/>
+                        <img src='./img/dashboard-1-2.jpg' className='relative p-2 md:p-0 left-[270px] -top-[200px] w-[30%] md:w-auto md:left-[850px] md:-top-[300px]' id='dashboard_1_2'/>
+                    </div>
+                </div>  
+            </div>
+
+            {/* Simple yet text section */}
+            <div className='w-full md:w-2/3 m-auto mt-20 md:mt-40'>
+                <p className='text-gray-900 text-[45px] md:text-[58px] font-semibold text-center'>The LinkDrip <label className='text-[#9B7BF7]'>Blog</label></p>
+                <p className='text-gray-500 text-[18px] md:text-[20px]  font-semibold text-center md:mt-4'>Learn everything about building your brand through intentional link engagement</p>
+                <p className='text-gray-500 text-[18px] md:text-[20px]  font-semibold text-center'>building.</p>
+            </div>
+
+            <div className='md:w-2/3 m-auto grid grid-cols-1 md:grid-cols-3 p-5 md:p-0 md:mt-10'>
+                
+                <div class="max-w-sm bg-white rounded-3xl shadow-md  border border-gray-800">
+                        <img className="rounded-3xl p-3" src="./img/card-1.png"   />
+                        <img className='relative border-4 border-white  rounded-full w-[80px] h-[80px] -top-[100px] -right-[40px]' src='./img/avatar-1.jpg' />                        
+                    <div class="px-5 pb-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-800 hover:text-[#9B7BF7]">50+ Powerful Call to Action Phrases to Help Boost Your Conversions</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <a href="#" class="inline-flex items-center py-2 px-3 text-base font-medium text-center text-[#9B7BF7] ">
+                            Read more
+                            <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
             </div>
             </>
     )
