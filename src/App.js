@@ -19,9 +19,11 @@ function App() {
       <Router> 
         <Navbar />
             <Routes>
-                  <Route path="/" element={<Dashboard />} />
-        </Routes>  
-        <Footer />
+              <Route
+                  path="/"
+                  element={<Dashboard />}
+                />
+            </Routes>  
         </Router>
       </>
   );

@@ -1,66 +1,132 @@
-import React from 'react';
+    import React , {useState} from 'react';
+    import {Link} from 'react-router-dom';
+    import { Transition } from "@headlessui/react";
+    import './Navbar.css';
+    function Navbar() {
 
-function Navbar() {
-    return (
-        <div>
-            <div className='text-white bg-[rgb(237,100,166)]'>
-                <p className='text-white text-[22px] text-center py-6'>👋 <a href='#' className='underline '>Get Early Access now!</a> Lifetime Deal - Single one-time payment.</p>
-            </div>
-            {/* Navbar */}
-            <nav class="px-2 bg-white border-gray-200 mt-5">
-                <div class="container flex flex-wrap justify-between mt-10 px-10 items-center mx-auto">
-                    <a href="#" class="flex items-center gap-4">
-                        <img src="./img/logo.jpg" class="mr-3 h-6 sm:h-10" alt="Flowbite Logo" />
-                        <span class="self-center text-3xl font-bold whitespace-nowrap text-[rgb(155,123,247)] tracking-wide">LinkDrip</span>
-                    </a>
-                    {/* <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 " aria-controls="mobile-menu-2" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-                    </button> */}
-                    <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
-                    <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white ">
-                        <li>
-                        <a href="#" class="block p-4 text-white text-2xl bg-gray-900 rounded md:bg-transparent md:text-gray-700" aria-current="page">Home</a>
-                        </li>
-                        <li>
-                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class=" p-4 text-white text-2xl bg-gray-900 rounded md:bg-transparent md:text-gray-900 flex items-center">Features <svg class="ml-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+        const [isOpen, setIsOpen] = useState(false);
 
-                            {/* <div id="dropdownNavbar" class="hidden z-10 w-44 font-normal bg-white rounded divide-y divide-gray-100 shadow ">
-                                <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                                <li>
-                                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 ">Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 ">Settings</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="block py-2 px-4 hover:bg-gray-100 ">Earnings</a>
-                                </li>
-                                </ul>
-                                <div class="py-1">
-                                <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 ">Sign out</a>
-                                </div>
-                            </div> */}
+        const toggleCollapse = () => {
+        const btn_nav = document.getElementsByClassName(
+        'btn-nav'
+        ) ;
+
+        if (btn_nav[0].className.search('animated') < 0) {
+        btn_nav[0].classList.add('animated');
+        } else {
+        btn_nav[0].classList.remove('animated');
+            }
+        };
+
+        return (
+            <>
+                <div className='text-white bg-[rgb(237,100,166)] '>
+                    <p className='text-white m-auto text-[16px] md:text-[18px] text-center pt-8 pb-4 md:py-6 md:inline-flex md:items-center md:ml-[35%]'><p>👋 &nbsp;</p><Link href='#' className='underline '><p>Get Early Access now!</p></Link> <p> &nbsp;Lifetime Deal - Single one-time payment.</p></p>
+                </div>
+            <div>
+            <nav className="bg-white  px-5 py-2.5 w-full md:w-2/3 m-auto b ">
+            <div className="">
+                <div className=" flex justify-between p-2 ">
+                <div class="container flex flex-wrap md:px-10 justify-between items-center mx-auto">
+                    <Link href="#" class="flex items-center gap-2 hover:scale-105 md:hover:scale-110 duration-700 ease-in-out">
+                        <img src="./img/logo.jpg" class="mr-3 h-9 md:h-9" alt="LinkDrip Logo" />
+                        <span class="self-center text-[24px] text-[#9B7BF7] font-bold whitespace-nowrap ">LinkDrip</span>
+                    </Link>
+                    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm  md:border-0 ">
+                        <li className='flex items-center'>
+                        <a href="#" class="block py-2 pr-1 pl-1 text-[18px] font-normal text-black  hover:text-[#9B7BF7]" aria-current="page">Home</a>
                         </li>
-                        <li>
-                            <a href="#" class="block p-4  text-white text-2xl bg-gray-900 rounded md:bg-transparent md:text-gray-700 ">Contact</a>
+                        {/* Dropdown menu */}
+                        
+                        <li className='flex items-center'>
+                            <a href="#" class="block py-2 pr-1 pl-1 text-[18px] font-normal text-black hover:text-[#9B7BF7]" aria-current="page">Features</a>
+                            <svg  xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
                         </li>
-                        <li>
-                            <a href="#" class="block p-4  text-white text-2xl bg-gray-900 rounded md:bg-transparent md:text-gray-700 ">Resources</a>
+
+                        {/* Dropdown menu */}
+                        <li className='flex items-center'>
+                        <a href="#" class="block  pr-1 py-1 font-normal text-[18px] text-black hover:text-[#9B7BF7]">Contact</a>
                         </li>
-                        <li>
-                            <a href="#" class="block p-4  text-white text-2xl bg-gray-900 rounded md:bg-transparent md:text-gray-700 ">Pricing</a>
+                        <li className='flex items-center'>
+                        <a href="#" class="block  pr-1 py-1 font-normal text-[18px] text-black hover:text-[#9B7BF7] ">Resources</a>
                         </li>
-                        <li>
-                            <a href="#" type='button' class=" p-4 rounded-xl text-white text-2xl bg-[rgb(155,123,247)] rounded md:text-white font-mono tracking-tighter "><strong>Get Early Access</strong></a>
+                        <li className='flex items-center'>
+                            <button href="#" class="block border border-gray-200 px-5 py-4 ml-2 rounded-md font-normal text-[18px] text-black hover:text-white hover:scale-105 hover:bg-[#ED64A6] duration-500 ease-in-out">Pricing</button>
+                        </li>
+                        <li className='flex items-center'>
+                            <button className='block border border-gray-200 text-white bg-[#9B7BF7] px-5 py-4 rounded-md -ml-5 font-normal text-[18px]  hover:text-white hover:scale-105 hover:bg-[#ED64A6] duration-500 ease-in-out'>Get Early Access</button>
                         </li>
                     </ul>
                     </div>
                 </div>
-            </nav>
-            {/* Navbar */}
-        </div>
-    )
-}
+                <div className="-mr-2 flex md:hidden">
+                    <button onClick={() => { toggleCollapse(); setIsOpen(!isOpen); }} class="btn-nav">
+                        <span class="icon-bar top rounded-full"></span>
+                        <span class="icon-bar middle rounded-full"></span>
+                        <span class="icon-bar bottom rounded-full"></span>
+                    </button>
 
-export default Navbar;
+                </div>
+                </div>
+            </div>
+
+            <Transition
+                show={isOpen}
+                enter="transition ease-out duration-700 transform"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="transition ease-in duration-75 transform"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+            >
+                {(ref) => (
+                <div className="md:hidden border border-gray-200 rounded" id="mobile-menu">
+                    <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a
+                        href="#"
+                        className="hover:text-[#9B7BF7]  text-black block px-3 py-2 rounded-md text-base "
+                    >
+                        Home
+                    </a>
+
+                    <a
+                        href="#"
+                        className="text-black hover:text-[#9B7BF7] block px-3 py-2 rounded-md text-ba"
+                    >
+                        Features
+                    </a>
+
+                    <a
+                        href="#"
+                        className="text-black hover:text-[#9B7BF7] block px-3 py-2 rounded-md text-ba"
+                    >
+                        Contract
+                    </a>
+
+                    <a
+                        href="#"
+                        className="text-black hover:text-[#9B7BF7]  block px-3 py-2 rounded-md text-ba"
+                    >
+                        Resources
+                    </a>
+                    <a>
+                        <button href="#" class="block border w-full border-gray-200  py-4  rounded-md font-normal text-[18px] text-black hover:text-white hover:scale-105 hover:bg-[#ED64A6] duration-500 ease-in-out">Pricing</button>
+                    </a>
+                    <a>
+                        <button className='block border w-full border-gray-200 text-white bg-[#9B7BF7] mt-5 px-5 py-4 rounded-md font-normal text-[18px]  hover:text-white hover:scale-105 hover:bg-[#ED64A6] duration-500 ease-in-out'>Get Early Access</button>
+                    </a>
+
+                    </div>
+                </div>
+                )}
+            </Transition>
+            </nav>
+            </div>
+            </>
+        )
+    }
+
+    export default Navbar;

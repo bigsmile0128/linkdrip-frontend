@@ -1,0 +1,42 @@
+    #dashboard_1_1{
+        animation: MoveUpDown 2s linear infinite;
+        
+      }
+      
+      @keyframes MoveUpDown {
+        0%, 100% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(-10px);
+        }
+      }
+
+      #dashboard_1_2{
+        animation: MoveUpDown_1_2 2s linear infinite;
+        
+      }
+      
+      @keyframes MoveUpDown_1_2 {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(10px);
+        }
+      }
+
+      
+      #dashboard_1_3{
+        animation: MoveUpDown_1_3 2s linear infinite;
+        
+      }
+      
+      @keyframes MoveUpDown_1_3 {
+        0%, 100% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(-5px);
+        }
+      }
