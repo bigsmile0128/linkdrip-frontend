@@ -24,6 +24,7 @@ function App() {
                   element={<Dashboard />}
                 />
             </Routes>  
+            <Footer />
         </Router>
       </>
   );

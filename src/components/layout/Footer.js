@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 function Footer() {
     return (
-    <footer class="m-auto md:w-2/3  md:p-6 ">
+    <footer class="m-auto md:w-2/3  md:p-6 mt-5 md:mt-20">
         <div class="md:flex md:justify-between px-10 md:px-0">
             <div class="mb-6 md:mb-0">
                 <Link href="#" class="flex items-center gap-2 hover:scale-105 md:hover:scale-110 duration-700 ease-in-out">
@@ -110,7 +110,7 @@ function Footer() {
             {/* footer form section */}
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-200 lg:my-8" />
         <div class="m-auto text-center">
-            <span class="text-sm text-gray-500 text-[24px]">Copyright 2022 © LinkDrip</span>
+            <span class="text-sm text-gray-500 text-[20px]">Copyright 2022 © LinkDrip</span>
         </div>
     </footer>
     )
