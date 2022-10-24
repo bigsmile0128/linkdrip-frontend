@@ -25,14 +25,14 @@
             <div className="">
                 <div className=" flex justify-between p-2 ">
                 <div class="container flex  sm:px-5 md:px-10 lg:px-5 justify-between items-center mx-auto">
-                    <Link href="#" class="flex items-center gap-2 hover:scale-105 md:hover:scale-110 duration-700 ease-in-out">
+                    <Link to={'/'} class="flex items-center gap-2 hover:scale-105 md:hover:scale-110 duration-700 ease-in-out">
                         <img src="./img/logo.jpg" class="mr-3 h-9 md:h-9" alt="LinkDrip Logo" />
                         <span class="self-center text-[24px] text-[#9B7BF7] font-bold whitespace-nowrap title_font">LinkDrip</span>
                     </Link>
                     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                     <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-4 sm:space-x-2 md:mt-0 md:text-sm  md:border-0 ">
                         <li className='flex items-center'>
-                        <a href="#" class="block py-2 pr-1 pl-1 text-[18px] font-normal text-black title_font hover:text-[#9B7BF7]" aria-current="page">Home</a>
+                        <Link to={'/'} class="block py-2 pr-1 pl-1 text-[18px] font-normal text-black title_font hover:text-[#9B7BF7]" aria-current="page">Home</Link>
                         </li>
                         {/* Dropdown menu */}
                         

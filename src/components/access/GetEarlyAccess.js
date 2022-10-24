@@ -112,13 +112,13 @@ function GetEarlyAccess(){
                 </div>
 
                 {/* Simple yet text section */}
-                <div className='w-full md:w-[850px] m-auto mt-20 md:mt-40'>
+                <div className='hidden md:block w-full md:w-[850px] m-auto mt-20 md:mt-40'>
                     <p className='text-gray-900 text-[45px] md:text-[58px] font-semibold text-center title_font'>Compare plans</p>
                     <p className='text-gray-500 text-[18px] md:text-[20px]   text-center md:mt-4 title_font'>Pick the plan that fits your needs.</p>
                     <p className='text-gray-500 text-[18px] md:text-[20px]   text-center title_font'>You won't be able to change it later, <b>so consider carefully.</b></p>
                 </div>
                 {/* Table section */}
-                <div className='md:w-2/3 m-auto mt-10 md:mt-20'>
+                <div className='hidden md:block md:w-2/3 m-auto mt-10 md:mt-20'>
                 <div class="overflow-x-auto">
                     {/* Table one */}
                     <table class="w-full  text-center title_font">
