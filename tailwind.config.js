@@ -4,7 +4,14 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        ClarityCity: ["ClarityCity", "sans-serif"],
+      },
+    },
   },
   plugins: [],
-}
+};
+
+
+

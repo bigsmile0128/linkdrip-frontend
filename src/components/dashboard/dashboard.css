@@ -2,6 +2,10 @@
         animation: MoveUpDown 2s linear infinite;
         
       }
+
+      .title_font{
+        font-family:  ClarityCity;
+      }
       
       @keyframes MoveUpDown {
         0%, 100% {

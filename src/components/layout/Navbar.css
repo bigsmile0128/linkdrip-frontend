@@ -17,6 +17,10 @@
   outline: 0;
 }
 
+.title_font{
+  font-family: ClarityCity;
+}
+
 .icon-bar {
   display: block;
   margin: 5px 0;
