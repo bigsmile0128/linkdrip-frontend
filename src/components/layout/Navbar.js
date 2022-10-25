@@ -5,7 +5,7 @@
     function Navbar() {
 
         const [isOpen, setIsOpen] = useState(false);
-
+        
         const toggleCollapse = () => {
         const btn_nav = document.getElementsByClassName(
         'btn-nav'
@@ -45,7 +45,7 @@
                         </button>
 
                         {/* Dropdown Part */}
-                        <div id="dropdown" class="hidden z-10 bg-white rounded divide-y divide-gray-100 shadow title_font">
+                        <div id="dropdown" class={`hidden z-10 bg-white rounded divide-y divide-gray-100 shadow title_font`}>
                             <ul class="py-1 text-[18px] text-[#0F1A2F] font-bold " aria-labelledby="dropdownDefault">
                             <div className='grid grid-cols-2 gap-10'>
                             <Link to={'/analytics'} className='flex items-center hover:scale-105 duration-500 ease-in-out'>
