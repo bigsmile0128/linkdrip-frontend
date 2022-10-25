@@ -37,7 +37,7 @@
                         </li>
                         {/* Dropdown menu */}
                         
-                        <button type="button" id="dropdownDefault" data-dropdown-toggle="dropdown" class=" flex items-center py-2 pr-1 pl-1 text-[18px] font-normal text-black title_font hover:text-[#9B7BF7] " >
+                        <button type="button" id="dropdownDefault" data-dropdown-toggle="dropdown" class="flex items-center py-2 pr-1 pl-1 text-[18px] font-normal text-black title_font hover:text-[#9B7BF7] " >
                             Features 
                             <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>

@@ -16,6 +16,7 @@ import Code from './components/code/Code';
 import Rotation from './components/rotation/Rotation';
 import Term from './components/term/Term';
 import Feature from './components/feature/Feature';
+import Privacy from './components/privacy/Privacy';
 // import modules
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -41,6 +42,7 @@ function App() {
               <Route path="/rotation" element={<Rotation />} />
               <Route path="/term" element={<Term />} />
               <Route path="/getAllFeatures" element={<Feature />} />
+              <Route path="/privacy" element={<Privacy />} />
             </Routes>  
             <Footer />
         </Router>

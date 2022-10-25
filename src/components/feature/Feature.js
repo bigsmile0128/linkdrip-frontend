@@ -39,14 +39,14 @@ function Feature(){
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                     </svg>
                 </p>
-                <img src='./img/chart.png'/>
+                <img src='./img/retarget-1.png'/>
             </div>
 
             <div className='p-8 hover:scale-105 duration-300 ease-in-out'>
                 <div>
-                <img src='./img/analytical.png'/>
-                <p className='mt-2 text-[36px] text-gray-900 font-semibold title_font'>Advanced analytics</p>
-                <p className='mt-1 text-[20px] text-gray-500 font-semibold title_font'>Observe and analyse your links performance in real-time From referrer , device , to the local city of the visitor.</p>
+                <img src='./img/code-2.png'/>
+                <p className='mt-2 text-[36px] text-gray-900 font-semibold title_font'>QR Codes</p>
+                <p className='mt-1 text-[20px] text-gray-500 font-semibold title_font'>Target your offline audience with branded QR Codes. Don't print in vain - you can always change the destination.</p>
                 <p className='flex items-center  mt-5 text-[20px] text-[#9B7BF7] font-bold'>
                     Learn more
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 pt-1">
@@ -54,26 +54,26 @@ function Feature(){
                     </svg>
                 </p>    
                 </div>
-                <img src='./img/chart.png' className=""/>
+                <img src='./img/code-1.png' className=""/>
             </div>
             <div className='p-8 hover:scale-105 duration-300 ease-in-out'>
-                <img src='./img/analytical-1.png'/>
-                <p className='mt-2 text-[36px] text-gray-900 font-semibold title_font'>Inbuilt retargeting</p>
-                <p className='mt-1 text-[20px] text-gray-500 font-semibold title_font'>Retarget your visitors with ads on Facebook , Linkedin , YouTube , Google and many more.</p>
+                <img src='./img/section-2.png'/>
+                <p className='mt-2 text-[36px] text-gray-900 font-semibold title_font'>Call-To-Action</p>
+                <p className='mt-1 text-[20px] text-gray-500 font-semibold title_font'>Add a custom Call-To-Action overlay on your destination site. Customize branding, logo, colors, call-to-action and much more.</p>
                 <p className='flex items-center  mt-5 text-[20px] text-[#9B7BF7] font-bold'>
                     Learn more
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 pt-1">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                     </svg>
                 </p>
-                <img src='./img/chart.png'/>
+                <img src='./img/feature-1.png'/>
             </div>
 
             <div className='p-8 hover:scale-105 duration-300 ease-in-out'>
                 <div>
-                <img src='./img/analytical.png'/>
-                <p className='mt-2 text-[36px] text-gray-900 font-semibold title_font'>Advanced analytics</p>
-                <p className='mt-1 text-[20px] text-gray-500 font-semibold title_font'>Observe and analyse your links performance in real-time From referrer , device , to the local city of the visitor.</p>
+                <img src='./img/section-3.png'/>
+                <p className='mt-2 text-[36px] text-gray-900 font-semibold title_font'>A/B testing</p>
+                <p className='mt-1 text-[20px] text-gray-500 font-semibold title_font'>Setup A/B testing of your links. Measure which destinations converts the best.</p>
                 <p className='flex items-center  mt-5 text-[20px] text-[#9B7BF7] font-bold'>
                     Learn more
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 pt-1">
@@ -81,19 +81,19 @@ function Feature(){
                     </svg>
                 </p>    
                 </div>
-                <img src='./img/chart.png' className=""/>
+                <img src='./img/feature-2.png' className=""/>
             </div>
             <div className='p-8 hover:scale-105 duration-300 ease-in-out'>
-                <img src='./img/analytical-1.png'/>
-                <p className='mt-2 text-[36px] text-gray-900 font-semibold title_font'>Inbuilt retargeting</p>
-                <p className='mt-1 text-[20px] text-gray-500 font-semibold title_font'>Retarget your visitors with ads on Facebook , Linkedin , YouTube , Google and many more.</p>
+                <img src='./img/rotation-2.png'/>
+                <p className='mt-2 text-[36px] text-gray-900 font-semibold title_font'>Link rotation</p>
+                <p className='mt-1 text-[20px] text-gray-500 font-semibold title_font'>Automatically rotate your target destination on a schedule or given performance conditions.</p>
                 <p className='flex items-center  mt-5 text-[20px] text-[#9B7BF7] font-bold'>
                     Learn more
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 pt-1">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                     </svg>
                 </p>
-                <img src='./img/chart.png'/>
+                <img src='./img/feature-3.png'/>
             </div>
         </div>
     </>
