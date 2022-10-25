@@ -39,7 +39,7 @@ function Testing() {
                     </div>
                 </div>
                 <div className="mt-10 md:mt-0">
-                    <img src="../../img/testing-1.png" className="scale-125" />
+                    <img src="../../img/testing-1.png" />
                 </div>
             </div>
             {/* Text area */}

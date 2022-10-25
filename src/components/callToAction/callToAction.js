@@ -43,7 +43,7 @@ function CallToAction() {
                 <div className="mt-10 md:mt-0">
                     <img
                         src="../../img/callToAction-1.png"
-                        className="scale-125"
+                        className=""
                     />
                 </div>
             </div>

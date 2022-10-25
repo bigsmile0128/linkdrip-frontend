@@ -1,9 +1,26 @@
-import React from "react";
+import React , {useState} from "react";
 // import Components
 import Header from "../layout/Header";
 import Navbar from "../layout/Navbar";
+import { Transition } from "@headlessui/react";
 import "./Contact.css";
 function Contact() {
+
+    const [isOpen1, setIsOpen1] = useState(false);
+    const [isOpen2, setIsOpen2] = useState(false);
+    const [isOpen3, setIsOpen3] = useState(false);
+    const [isOpen4, setIsOpen4] = useState(false);
+
+    const toggleCollapse = () => {
+        const btn_nav = document.getElementsByClassName("btn-nav");
+
+        if (btn_nav[0].className.search("animated") < 0) {
+            btn_nav[0].classList.add("animated");
+        } else {
+            btn_nav[0].classList.remove("animated");
+        }
+    };
+
     return (
         <>
             <Header />
@@ -87,7 +104,114 @@ function Contact() {
                         </div>
                     </div>
                 </div>
-            </div>
+                </div>
+
+                {/* Simple yet text section */}
+                <div className='w-full md:w-2/3 m-auto mt-20 md:mt-[450px]'>
+                    <p className='text-gray-900 text-[45px] md:text-[58px] font-semibold text-center title_font'>Frequently Asked <label className='text-[#9B7BF7] title_font font-bold'>Questions</label></p>
+                    <p className='text-gray-500 text-[18px] md:text-[20px]  font-semibold text-center md:mt-4 title_font'>We get these questions a lot.</p>
+                    <p className='text-gray-500 text-[18px] md:text-[20px]  font-semibold text-center title_font'>See if you can find the answer you're looking for below.</p>
+                </div>
+                
+                {/* FAQ part */}
+                <div className="md:mb-80">
+                    <div className="w-full md:w-2/3 m-auto mt-10 md:mt-20 p-5 rounded-md hover:scale-105 duration-700 ease-in-out">
+                        <button onClick={() => { toggleCollapse(); setIsOpen1(!isOpen1); }} className="flex justify-between items-center w-full" >
+                            <p className="text-[#0F1A2F] text-[25px] title_font font-semibold">Can I use Linkdrip for free?</p>
+                        </button>
+                    </div>
+
+                    <Transition
+                        show={isOpen1}
+                        enter="transition ease-out duration-700 transform"
+                        enterFrom="opacity-0 scale-95"
+                        enterTo="opacity-100 scale-100"
+                        leave="transition ease-in duration-75 transform"
+                        leaveFrom="opacity-100 scale-100"
+                        leaveTo="opacity-0 scale-95"
+                    >
+                        {(ref) => (
+                            <div className="w-full md:w-2/3 m-auto border border-gray-300 rounded-2xl p-4" id="mobile-menu">
+                                <p className="text-[20px]  text-gray-500">We are still working on putting together a killer pricing model for this product. And we will definitely favor all kinds of users with our prices.</p>
+                            </div>
+                        )}
+                    </Transition>
+                {/* FAQ Part */}
+
+                {/* FAQ part */}
+                <div className="w-full md:w-2/3  m-auto mt-10 md:mt-20 p-5 rounded-md hover:scale-105 duration-700 ease-in-out ">
+                        <button onClick={() => { toggleCollapse(); setIsOpen2(!isOpen2); }} className="flex justify-between items-center w-full" >
+                            <p className="text-[#0F1A2F] text-[25px] title_font font-semibold">Can I use Linkdrip as a team?</p>
+                        </button>
+                    </div>
+
+                    <Transition
+                        show={isOpen2}
+                        enter="transition ease-out duration-700 transform"
+                        enterFrom="opacity-0 scale-95"
+                        enterTo="opacity-100 scale-100"
+                        leave="transition ease-in duration-75 transform"
+                        leaveFrom="opacity-100 scale-100"
+                        leaveTo="opacity-0 scale-95"
+                    >
+                        {(ref) => (
+                            <div className="w-full md:w-2/3 m-auto border border-gray-300 rounded-2xl p-4" id="mobile-menu">
+                                <p className="text-[20px]  text-gray-500">Yes. With LinkDrip you can create separate workspaces and invite users to collaborate. </p>
+                            </div>
+                        )}
+                    </Transition>
+                {/* FAQ Part */}
+
+                {/* FAQ part */}
+                <div className="w-full md:w-2/3  m-auto mt-10 md:mt-20 p-5 rounded-md hover:scale-105 duration-700 ease-in-out ">
+                        <button onClick={() => { toggleCollapse(); setIsOpen3(!isOpen3); }} className="flex justify-between items-center w-full" >
+                            <p className="text-[#0F1A2F] text-[25px] title_font font-semibold">Do you currently have opening positionS?</p>
+                        </button>
+                    </div>
+
+                    <Transition
+                        show={isOpen3}
+                        enter="transition ease-out duration-700 transform"
+                        enterFrom="opacity-0 scale-95"
+                        enterTo="opacity-100 scale-100"
+                        leave="transition ease-in duration-75 transform"
+                        leaveFrom="opacity-100 scale-100"
+                        leaveTo="opacity-0 scale-95"
+                    >
+                        {(ref) => (
+                            <div className="w-full md:w-2/3 m-auto border border-gray-300 rounded-2xl p-4" id="mobile-menu">
+                                <p className="text-[20px]  text-gray-500">Not at the moment.</p>
+                                <p className="text-[20px]  text-gray-500">Though, if your credentials are overwhelming, and you believe we can't say </p>
+                                <p className="text-[20px]  text-gray-500">no - shoot us an email!</p>
+                            </div>
+                        )}
+                    </Transition>
+                {/* FAQ Part */}
+
+                {/* FAQ part */}
+                <div className="w-full md:w-2/3  m-auto mt-10 md:mt-20 p-5 rounded-md hover:scale-105 duration-700 ease-in-out ">
+                        <button onClick={() => { toggleCollapse(); setIsOpen4(!isOpen4); }} className="flex justify-between items-center w-full" >
+                            <p className="text-[#0F1A2F] text-[25px] title_font font-semibold">Do you offer discount for non-profits?</p>
+                        </button>
+                    </div>
+
+                    <Transition
+                        show={isOpen4}
+                        enter="transition ease-out duration-700 transform"
+                        enterFrom="opacity-0 scale-95"
+                        enterTo="opacity-100 scale-100"
+                        leave="transition ease-in duration-75 transform"
+                        leaveFrom="opacity-100 scale-100"
+                        leaveTo="opacity-0 scale-95"
+                    >
+                        {(ref) => (
+                            <div className="w-full md:w-2/3 m-auto border border-gray-300 rounded-2xl p-4" id="mobile-menu">
+                                <p className="text-[20px]  text-gray-500">We are still working out the financials and we are actively looking into both non-profit discounting and parity offers.</p>
+                            </div>
+                        )}
+                    </Transition>
+                {/* FAQ Part */}
+                </div>
         </>
     );
 }

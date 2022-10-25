@@ -21,10 +21,10 @@ function Dashboard() {
                 </div>
                 {/* Dashboard text section above image */}
                 <div className="text-center mt-2 md:mt-5">
-                    <p className="text-[30px] md:text-[76px] text-[#0F1A2f] font-bold title_font">
+                    <p className="text-[40px] min-[1450px]:text-[76px] text-[#0F1A2f] font-bold title_font">
                         The most sophisticated
                     </p>
-                    <p className=" text-[30px] md:text-[76px] text-[#9B7BF7] font-bold -mt-3 md:-mt-5 title_font">
+                    <p className=" text-[40px] min-[1450px]:text-[76px] text-[#9B7BF7] font-bold -mt-3 md:-mt-5 title_font">
                         link engagement tool
                     </p>
                     <p className="text-[16px] md:text-[18px] text-[#6E7191] font-light md:font-bold title_font">
@@ -41,41 +41,47 @@ function Dashboard() {
                             </button>
                         </Link>
                         <div>
-                            <button
-                                href="#"
+                            <Link
+                                to={'/early-access/offer'}
                                 className="w-[92%] md:float-left md:w-auto border title_font border-gray-200 px-10 py-4  mt-2 md:mt-0 md:py-6 md:ml-2 rounded-md font-normal text-[18px] text-black hover:text-white hover:scale-105 hover:bg-[#ED64A6] duration-500 ease-in-out"
                             >
                                 Learn more
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
 
                 {/* Dashboard Slide image section */}
                 <div
-                    className="md:ml-20 mt-5 md:mt-10 m-auto"
+                    className="md:ml-20 mt-5 md:mt-10 m-auto relative"
                     id="dashboardImage"
                 >
-                    <img
-                        src="./img/dashboard-1.jpg "
-                        className="absolute p-2 md:p-0 "
-                        id="dashboard_1"
-                    />
-                    <img
-                        src="./img/dashboard-1-1.jpg"
-                        className="relative p-2 md:p-0 -left-[10px] top-[60px] w-[50%] md:w-auto md:-left-[100px] md:top-[230px]"
-                        id="dashboard_1_1"
-                    />
-                    <img
+                    <div>
+                        <img
+                            src="./img/dashboard-1.jpg "
+                            className="p-2 md:p-0 "
+                            id="dashboard_1"
+                        />
+                    </div>
+                    <div className="absolute w-[100%] h-[100%] top-0">
+                        
+                            
+                        <img
+                            src="./img/dashboard-1-1.jpg"
+                            className="p-2 md:p-0 w-[50%] md:-left-20 absolute sm:left-0 mt-[15%] "
+                            id="dashboard_1_1"
+                        />
+                         <img
                         src="./img/dashboard-1-2.jpg"
-                        className="relative p-2 md:p-0 left-[270px] -top-[200px] w-[30%] md:w-auto md:left-[850px] md:-top-[300px]"
+                        className="w-[30%] absolute left-[75%] top-[15%]"
                         id="dashboard_1_2"
                     />
-                    <img
+                        <img
                         src="./img/dashboard-1-3.jpg"
-                        className="relative p-2 md:p-0 bottom-[150px] left-[190px] w-[50%] md:w-auto md:left-[650px] md:bottom-[280px]"
+                        className="absolute  left-[60%] p-2 w-[50%] top-[65%]"
                         id="dashboard_1_3"
-                    />
+                    /> 
+                    </div>
                 </div>
             </div>
 
@@ -411,7 +417,7 @@ function Dashboard() {
                         </div>
                     </div>
                 </div>
-                <div className="m-auto">
+                <div className="m-auto ">
                     <img src="./img/metadata-5.png" />
                 </div>
             </div>
@@ -472,31 +478,28 @@ function Dashboard() {
             {/* section */}
             {/* Metadata Section */}
             <div className="w-full md:w-2/3 grid grid-col-1 md:px-20 md:grid-cols-2 m-auto md:mt-40 p-2">
-                <div className="text-center md:pl-20">
-                    <div className="rounded-lg px-4">
+                <div className="text-center m-auto md:pl-20">
+                    <div className="rounded-lg px-4 md:mt-20">
                         <img src="./img/domain-1.png" />
-                        <p className="text-[28px] md:text-[35px] text-gray-700 text-left font-semibold title_font">
+                        <p className="text-[28px] md:text-[35px] text-gray-700 text-left font-semibold title_font mt-5">
                             Build UTM tags directly
                         </p>
-                        <p className="text-[28px] md:text-[35px] md:-mt-4 text-gray-700 text-left font-semibold title_font">
+                        <p className="text-[28px] md:text-[35px] md:-mt-4 text-gray-700 text-left font-semibold title_font mt-2">
                             into the link
                         </p>
-                        <p className="text-[15px] md:text-[18px]  text-gray-500 text-left font-semibold title_font">
+                        <p className="text-[15px] md:text-[18px]  text-gray-500 text-left font-semibold title_font mt-5">
                             Make it easy to keep analytics organized for the
                         </p>
-                        <p className="text-[15px] md:text-[18px]  text-gray-500 text-left font-semibold title_font">
+                        <p className="text-[15px] md:text-[18px]  text-gray-500 text-left font-semibold title_font mt-2">
                             destination link, by including UTM tags in it.
                         </p>
                     </div>
                 </div>
                 <div className="m-auto">
+                    {/*  */}
                     <img
-                        src="./img/dashboard-1-4.jpg"
-                        className="absolute w-[80%] md:w-auto"
-                    />
-                    <img
-                        src="./img/dashboard-1-2.jpg"
-                        className="relative w-[80%] md:w-auto -left-[50px] top-[200px] md:-left-[100px] md:top-[240px]"
+                        src="../../img/dashboard-1-7.jpg.png"
+                        className=" w-[80%] md:w-auto"
                     />
                 </div>
             </div>
@@ -511,7 +514,7 @@ function Dashboard() {
             </Link>
 
             {/* background sections */}
-            <div className="bg-[#9B7BF7] w-full h-[850px] md:h-[1250px]">
+            <div className="bg-[#9B7BF7] w-full h-[95%]">
                 {/* Simple yet text section */}
                 <div className="w-full md:w-2/3 m-auto mt-20 md:mt-40 md:pt-40 title_font">
                     <p className="text-white text-[45px] md:text-[58px] font-semibold text-center title_font">
@@ -539,26 +542,36 @@ function Dashboard() {
 
                 {/* Dashboard Slide image section */}
                 <div className="md:w-2/3 m-auto">
-                    <div
-                        className="md:ml-20 mt-5 md:mt-10 "
-                        id="dashboardImage"
-                    >
+                <div
+                    className="md:ml-20 mt-5 md:mt-10 m-auto relative"
+                    id="dashboardImage"
+                >
+                    <div>
                         <img
                             src="./img/dashboard-1.jpg "
-                            className="absolute p-2 md:p-0 "
+                            className="p-2 md:p-0 "
                             id="dashboard_1"
                         />
+                    </div>
+                    <div className="absolute w-[100%] h-[100%] top-0">
+                        
                         <img
                             src="./img/dashboard-1-1.jpg"
-                            className="relative p-2 md:p-0 -left-[10px] top-[60px] w-[50%] md:w-auto md:-left-[100px] md:top-[230px]"
+                            className="p-2 md:p-0 w-[50%] md:-left-20 absolute sm:left-0 mt-[15%] "
                             id="dashboard_1_1"
                         />
+                         <img
+                        src="./img/dashboard-1-2.jpg"
+                        className="w-[30%] absolute left-[75%] top-[15%]"
+                        id="dashboard_1_2"
+                    />
                         <img
-                            src="./img/dashboard-1-2.jpg"
-                            className="relative p-2 md:p-0 left-[270px] -top-[200px] w-[30%] md:w-auto md:left-[850px] md:-top-[300px]"
-                            id="dashboard_1_2"
-                        />
+                        src="./img/dashboard-1-3.jpg"
+                        className="absolute  left-[60%] p-2 w-[50%] top-[65%]"
+                        id="dashboard_1_3"
+                    /> 
                     </div>
+                </div>
                 </div>
             </div>
 
@@ -732,36 +745,49 @@ function Dashboard() {
             </div>
 
             <div className="grid place-items-center mt-40">
-                <button className="w-[92%] md:w-auto border title_font border-gray-200  text-gray-60 bg-white  px-20 md:px-14 py-4 md:py-6 rounded-md text-[18px]  hover:text-white hover:scale-105 hover:bg-[#ED64A6] duration-500 ease-in-out">
+                <Link to={'/resource'} className="w-[92%] md:w-auto border title_font border-gray-200  text-gray-60 bg-white  px-20 md:px-14 py-4 md:py-6 rounded-md text-[18px]  hover:text-white hover:scale-105 hover:bg-[#ED64A6] duration-500 ease-in-out">
                     Browse all articles
-                </button>
+                </Link>
             </div>
 
             {/* Bottom section */}
-            <div className="w-full bg-[#9B7BF7] mt-20 md:mt-40 md:px-80 h-[600px] md:h-[700px]">
+            <div className="w-full bg-[#9B7BF7] mt-20 md:mt-40 md:px-10 h-[100%]">
                 <div className="grid grid-cols-1 md:grid-cols-2 md:pt-40">
                     <div className="p-2">
-                        <p className="text-white text-[45px] md:text-[58px] font-semibold text-left title_font">
+                        <p className="text-white  text-[35px] md:text-[58px] text-center font-semibold md:text-left title_font">
                             Start sharing your{" "}
                         </p>
-                        <p className="text-white text-[45px] md:text-[58px] font-semibold text-left title_font">
+                        <p className="text-white text-[35px] md:text-[58px] text-center font-semibold md:text-left title_font">
                             links In a new way
                         </p>
-                        <button className="w-[92%] mt-10 text-center md:mt-5 md:w-auto border md:text-left title_font border-gray-200 font-bold text-[#9B7BF7] bg-white  px-20 md:px-14 py-4 md:py-6 rounded-md text-[18px]  hover:text-white hover:scale-105 hover:bg-[#ED64A6] duration-500 ease-in-out">
+                        <Link to={'/early-access/offer'}>
+                        <button
+                         className="w-[92%] mt-10 text-center md:mt-5 md:w-auto border md:text-left title_font border-gray-200 font-bold text-[#9B7BF7] bg-white  px-20 md:px-14 py-4 md:py-6 rounded-md text-[18px]  hover:text-white hover:scale-105 hover:bg-[#ED64A6] duration-500 ease-in-out">
                             Get Early Access
                         </button>
+                        </Link>
                     </div>
-                    <div>
-                        <img
-                            src="./img/dashboard-1-5.jpg "
-                            className="absolute p-2 md:p-0 "
-                            id="dashboard_1"
-                        />
-                        <img
-                            src="./img/dashboard-1-6.jpg"
-                            className="relative p-2 md:p-0 -left-[10px] top-[60px] w-[50%] md:w-auto md:-left-[100px] md:top-[230px]"
-                            id="dashboard_1_1"
-                        />
+                    <div className="m-auto">
+                    {/* Dashboard Slide image section */}
+                    <div
+                        className="md:ml-20 mt-5 md:mt-10 m-auto relative"
+                        id="dashboardImage"
+                    >
+                        <div>
+                            <img
+                                src="./img/dashboard-1-5.jpg "
+                                className="p-2 md:p-0 "
+                                id="dashboard_1"
+                            />
+                        </div>
+                        <div className="absolute w-[100%] h-[100%] top-0">
+                            <img
+                                src="./img/dashboard-1-6.jpg"
+                                className="p-2 md:p-0 w-[50%] md:-left-20 absolute sm:left-0 mt-[30%] "
+                                id="dashboard_1_1"
+                            />
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>

@@ -1,8 +1,26 @@
-import React from 'react';
+import React , { useState } from 'react';
+import {Link} from 'react-router-dom';
+import { Transition } from "@headlessui/react";
 import './GetEarlyAccess.css'
 import Navbar from '../layout/Navbar';
 
 function GetEarlyAccess(){
+
+    const [isOpen1, setIsOpen1] = useState(false);
+    const [isOpen2, setIsOpen2] = useState(false);
+    const [isOpen3, setIsOpen3] = useState(false);
+    const [isOpen4, setIsOpen4] = useState(false);
+
+    const toggleCollapse = () => {
+        const btn_nav = document.getElementsByClassName("btn-nav");
+
+        if (btn_nav[0].className.search("animated") < 0) {
+            btn_nav[0].classList.add("animated");
+        } else {
+            btn_nav[0].classList.remove("animated");
+        }
+    };
+
     return(
         <>
         {/* Navbar section */}
@@ -124,14 +142,54 @@ function GetEarlyAccess(){
                                 <p className='text-white text-[18px] title_font font-semibold'>Track up to 50K visits/month </p>
                             </div>
 
-                            <div className='flex items-center gap-5 mt-1 md:mt-4'>
+                            <div className='hidden md:flex items-center gap-5 mt-1 md:mt-4'>
                                 <img src='../../img/tick_white.png' />
                                 <p className='text-white text-[18px] title_font font-semibold'>2 retargeting pixels</p>
                             </div>
 
-                            <div className='flex items-center gap-5 mt-1 md:mt-4'>
+                            <div className='hidden md:flex items-center gap-5 mt-1 md:mt-4'>
                                 <img src='../../img/tick_white.png' />
-                                <p className='text-white text-[18px] title_font font-semibold'>Custom domains </p>
+                                <p className='text-white text-[18px] title_font font-semibold'>Unlimited QR Codes </p>
+                            </div>
+                            {/* Responsive part */}
+                            <div className='md:hidden flex items-center gap-5 mt-1 md:mt-4'>
+                                <img src='../../img/tick_white.png' />
+                                <p className='text-white text-[18px] title_font font-semibold'>Unlimited Call-To-Actions </p>
+                            </div>
+
+                            <div className='md:hidden flex items-center gap-5 mt-1 md:mt-4'>
+                                <img src='../../img/tick_white.png' />
+                                <p className='text-white text-[18px] title_font font-semibold'>Unlimited Retargeting pixels </p>
+                            </div>
+
+                            <div className='md:hidden flex items-center gap-5 mt-1 md:mt-4'>
+                                <img src='../../img/tick_white.png' />
+                                <p className='text-white text-[18px] title_font font-semibold'>A/B Testing </p>
+                            </div>
+
+                            <div className='md:hidden flex items-center gap-5 mt-1 md:mt-4'>
+                                <img src='../../img/tick_white.png' />
+                                <p className='text-white text-[18px] title_font font-semibold'>Link rotation </p>
+                            </div>
+
+                            <div className='md:hidden flex items-center gap-5 mt-1 md:mt-4'>
+                                <img src='../../img/tick_white.png' />
+                                <p className='text-white text-[18px] title_font font-semibold'>Linkdrip Pixel </p>
+                            </div>
+
+                            <div className='md:hidden  flex items-center gap-5 mt-1 md:mt-4'>
+                                <img src='../../img/tick_white.png' />
+                                <p className='text-white text-[18px] title_font font-semibold'>10 Custom domains </p>
+                            </div>
+
+                            <div className='md:hidden flex items-center gap-5 mt-1 md:mt-4'>
+                                <img src='../../img/tick_white.png' />
+                                <p className='text-white text-[18px] title_font font-semibold'>10 Workspaces </p>
+                            </div>
+
+                            <div className='md:hidden flex items-center gap-5 mt-1 md:mt-4'>
+                                <img src='../../img/tick_white.png' />
+                                <p className='text-white text-[18px] title_font font-semibold'>5 members/workspace </p>
                             </div>
                         </div>  
 
@@ -393,7 +451,122 @@ function GetEarlyAccess(){
                     <p className='text-gray-500 text-[18px] md:text-[20px]  font-semibold text-center title_font'>See if you can find the answer you're looking for below.</p>
                 </div>
 
+                {/* FAQ part */}
+                    <div className="w-full md:w-2/3 m-auto mt-10 md:mt-20 p-5 rounded-md hover:scale-105 duration-700 ease-in-out">
+                        <button onClick={() => { toggleCollapse(); setIsOpen1(!isOpen1); }} className="flex justify-between items-center w-full" >
+                            <p className="text-[#0F1A2F] text-[25px] title_font font-semibold">When will I get access?</p>
+                        </button>
+                    </div>
+
+                    <Transition
+                        show={isOpen1}
+                        enter="transition ease-out duration-700 transform"
+                        enterFrom="opacity-0 scale-95"
+                        enterTo="opacity-100 scale-100"
+                        leave="transition ease-in duration-75 transform"
+                        leaveFrom="opacity-100 scale-100"
+                        leaveTo="opacity-0 scale-95"
+                    >
+                        {(ref) => (
+                            <div className="w-full md:w-2/3 m-auto  rounded-2xl p-4" id="mobile-menu">
+                                <p className="text-[20px]  text-gray-500">We expect to launch in private beta early 2023. This is when you'll get access.</p>
+                                <p className="text-[20px]  text-gray-500 mt-5">If you did not get access by the end of Q1, 2023, you'll be offered a full refund if you don't want to wait any longer.</p>
+                            </div>
+                        )}
+                    </Transition>
+                {/* FAQ Part */}
+
+                {/* FAQ part */}
+                <div className="w-full md:w-2/3  m-auto mt-10 md:mt-20 p-5 rounded-md hover:scale-105 duration-700 ease-in-out ">
+                        <button onClick={() => { toggleCollapse(); setIsOpen2(!isOpen2); }} className="flex justify-between items-center w-full" >
+                            <p className="text-[#0F1A2F] text-[25px] title_font font-semibold">Will I receive future updates?</p>
+                        </button>
+                    </div>
+
+                    <Transition
+                        show={isOpen2}
+                        enter="transition ease-out duration-700 transform"
+                        enterFrom="opacity-0 scale-95"
+                        enterTo="opacity-100 scale-100"
+                        leave="transition ease-in duration-75 transform"
+                        leaveFrom="opacity-100 scale-100"
+                        leaveTo="opacity-0 scale-95"
+                    >
+                        {(ref) => (
+                            <div className="w-full md:w-2/3 m-auto border border-gray-300 rounded-2xl p-4" id="mobile-menu">
+                                <p className="text-[20px]  text-gray-500">Yes! When we launch in public, LinkDrip will have at least 2 paid plans, Tier 1 and Tier 2. </p>
+                                <p className="text-[20px]  text-gray-500 mt-5">The Early Access Deal will be mapped to Tier 1, and the Early Access Deal +Plus will be mapped to Tier 2.</p>
+                                <p className="text-[20px]  text-gray-500 mt-5">In this way, any new features that will be added to these plans, will also automatically be added to the Early Access Deals.</p>
+                            </div>
+                        )}
+                    </Transition>
+                {/* FAQ Part */}
+
+                {/* FAQ part */}
+                <div className="w-full md:w-2/3  m-auto mt-10 md:mt-20 p-5 rounded-md hover:scale-105 duration-700 ease-in-out ">
+                        <button onClick={() => { toggleCollapse(); setIsOpen3(!isOpen3); }} className="flex justify-between items-center w-full" >
+                            <p className="text-[#0F1A2F] text-[25px] title_font font-semibold">What if I need more?</p>
+                        </button>
+                    </div>
+
+                    <Transition
+                        show={isOpen3}
+                        enter="transition ease-out duration-700 transform"
+                        enterFrom="opacity-0 scale-95"
+                        enterTo="opacity-100 scale-100"
+                        leave="transition ease-in duration-75 transform"
+                        leaveFrom="opacity-100 scale-100"
+                        leaveTo="opacity-0 scale-95"
+                    >
+                        {(ref) => (
+                            <div className="w-full md:w-2/3 m-auto border border-gray-300 rounded-2xl p-4" id="mobile-menu">
+                                <p className="text-[20px]  text-gray-500">You can always upgrade to a paid subscription at a later point if you need more than the Early Access Deal offers.</p>
+                            </div>
+                        )}
+                    </Transition>
+                {/* FAQ Part */}
+
+                {/* FAQ part */}
+                <div className="w-full md:w-2/3  m-auto mt-10 md:mt-20 p-5 rounded-md hover:scale-105 duration-700 ease-in-out ">
+                        <button onClick={() => { toggleCollapse(); setIsOpen4(!isOpen4); }} className="flex justify-between items-center w-full" >
+                            <p className="text-[#0F1A2F] text-[25px] title_font font-semibold">What if I change mind?</p>
+                        </button>
+                    </div>
+
+                    <Transition
+                        show={isOpen4}
+                        enter="transition ease-out duration-700 transform"
+                        enterFrom="opacity-0 scale-95"
+                        enterTo="opacity-100 scale-100"
+                        leave="transition ease-in duration-75 transform"
+                        leaveFrom="opacity-100 scale-100"
+                        leaveTo="opacity-0 scale-95"
+                    >
+                        {(ref) => (
+                            <div className="w-full md:w-2/3 m-auto border border-gray-300 rounded-2xl p-4" id="mobile-menu">
+                                <p className="text-[20px]  text-gray-500">We offer a full 30-day refund. No questions asked!</p>
+                            </div>
+                        )}
+                    </Transition>
+                {/* FAQ Part */}
                 </div>
+
+                {/* Bottom Form Section */}
+                {/* footer form section */}
+                <div className='mt-20 mb-20  md:mb-80 md:w-2/3 m-auto grid  md:grid-cols-2 gap-10 px-4 md:mt-80'>
+                    <div className='grid grid-cols-1 md:grid-cols-5'>
+                        <img src='../../img/footer.jpg' className='col-span-1'/>
+                        <div  className="text-left col-span-4">
+                            <b className='text-[#0F1A2F] text-[30px] title_font'>Join the waiting list.</b>
+                            <p className='text-gray-500 text-[18px] title_font'>We will send you an email (and a special launch offer), as soon as we launch in public 🚀</p>
+                        </div>
+                    </div>
+                    <div className='grid grid-cols-1 md:grid-cols-6 gap-2'>
+                        <input type={'text'} className=" md:col-span-4 px-3 py-4 rounded border w-full text-2xl md:text-3xl border-gray-200 focus:outline-none focus:ring focus:ring-violet-300" placeholder={"Enter your email"}/> 
+                        <button className='md:col-span-2 px-3 title_font py-4 text-[20px] bg-[#9B7BF7] hover:scale-105 hover:bg-[rgb(237,100,166)] duration-700 ease-in-out text-white rounded-md w-full'>Sign up</button> 
+                    </div>
+                </div>
+                    {/* footer form section */}
         </div>
         </>
     )    

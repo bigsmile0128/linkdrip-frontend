@@ -76,20 +76,20 @@ function Footer() {
                     <h2 className="mb-6  font-bold text-[20px] text-gray-900 title_font">Follow us</h2>
                     <ul className="text-gray-600  grid grid-cols-2  md:grid-cols-1 gap-4 md:gap-y-5 md:gap-x-20">
                         <li className="mb-6 md:mt-5">
-                            <Link to="#" className=" title_font flex items-center text-[18px] font-semibold hover:text-[#9B7BF7]"><i className="fa-brands fa-facebook"></i>&nbsp;Facebook
+                            <Link to="https://www.facebook.com/linkdrip" className=" title_font flex items-center text-[18px] font-semibold hover:text-[#9B7BF7]"><i className="fa-brands fa-facebook"></i>&nbsp;Facebook
                             </Link>
                         </li>
                         <li className="mb-6">
-                            <a href="#" className="text-[18px] title_font font-semibold hover:text-[#9B7BF7]"><i className="fa-brands fa-twitter"></i>&nbsp;Twitter</a>
+                            <Link to="https://twitter.com/LinkDrip_io" className="text-[18px] title_font font-semibold hover:text-[#9B7BF7]"><i className="fa-brands fa-twitter"></i>&nbsp;Twitter</Link>
                         </li>
                         <li className="mb-6">
-                            <a href="#" className="text-[18px] title_font font-semibold hover:text-[#9B7BF7]"><i className="fa-brands fa-instagram"></i>&nbsp;Instagram</a>
+                            <Link to="https://www.facebook.com/linkdrip" className="text-[18px] title_font font-semibold hover:text-[#9B7BF7]"><i className="fa-brands fa-instagram"></i>&nbsp;Instagram</Link>
                         </li>
                         <li className="mb-6">
-                            <a href="#" className="text-[18px] title_font font-semibold hover:text-[#9B7BF7]"><i className="fa-brands fa-linkedin"></i>&nbsp;Linkedin</a>
+                            <Link to="https://www.linkedin.com/company/linkdrip/" className="text-[18px] title_font font-semibold hover:text-[#9B7BF7]"><i className="fa-brands fa-linkedin"></i>&nbsp;Linkedin</Link>
                         </li>
                         <li className="mb-6">
-                            <a href="#" className="text-[18px] title_font font-semibold hover:text-[#9B7BF7]"><i className="fa-brands fa-youtube"></i>&nbsp;Youtube</a>
+                            <Link to="https://youtube.com/" className="text-[18px] title_font font-semibold hover:text-[#9B7BF7]"><i className="fa-brands fa-youtube"></i>&nbsp;Youtube</Link>
                         </li>
                     </ul>
                 </div>
@@ -98,7 +98,7 @@ function Footer() {
          {/* footer form section */}
          <div className='grid  md:grid-cols-2 gap-10 px-4 md:mt-20'>
                     <div className='grid grid-cols-1 md:grid-cols-5'>
-                        <img src='./img/footer.jpg' className='col-span-1'/>
+                        <img src='../../img/footer.jpg' className='col-span-1'/>
                         <div  className="text-left col-span-4">
                             <b className='text-gray-500 text-[24px] title_font'>Subscribe to our newsletter</b>
                             <p className='text-gray-500 text-[18px] title_font'>Get updated when we launch in public beta.</p>

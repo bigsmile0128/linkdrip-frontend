@@ -41,7 +41,7 @@ function Retarget() {
                     </div>
                 </div>
                 <div className="mt-10 md:mt-0">
-                    <img src="../../img/retarget-1.png" className="scale-125" />
+                    <img src="../../img/retarget-1.png"/>
                 </div>
             </div>
             {/* Text area */}

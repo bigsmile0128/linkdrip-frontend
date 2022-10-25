@@ -41,7 +41,7 @@ function Analytics() {
                     </div>
                 </div>
                 <div className="mt-10 md:mt-0">
-                    <img src="../../img/analytic-1.png" className="scale-125" />
+                    <img src="../../img/analytic-1.png"  />
                 </div>
             </div>
             {/* Text area */}

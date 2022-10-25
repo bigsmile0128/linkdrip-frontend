@@ -4,6 +4,7 @@ import { Transition } from "@headlessui/react";
 import "./Navbar.css";
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isOpen1, setIsOpen1] = useState(false);
 
     const toggleCollapse = () => {
         const btn_nav = document.getElementsByClassName("btn-nav");
@@ -18,10 +19,9 @@ function Navbar() {
     return (
         <>
             <div>
-                <nav className="bg-white  px-5 py-2.5 w-full md:w-2/3 m-auto">
-                    <div className="">
+                <nav className="bg-white  px-5 py-2.5 md:w-2/3 m-auto">
                         <div className=" flex justify-between p-2 ">
-                            <div className="container flex  sm:px-5 md:px-10 lg:px-5 justify-between items-center mx-auto">
+                            <div className="container flex justify-between items-center mx-auto">
                                 <Link
                                     to={"/"}
                                     className="flex items-center gap-2 hover:scale-105 md:hover:scale-110 duration-700 ease-in-out"
@@ -37,11 +37,11 @@ function Navbar() {
                                 </Link>
 
                                 <div
-                                    className="hidden w-full md:block md:w-auto"
+                                    className="max-[1450px]:hidden w-full block md:w-auto"
                                     id="navbar-default"
                                 >
                                     <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-4 sm:space-x-2 md:mt-0 md:text-sm  md:border-0 ">
-                                        <li className="flex items-center">
+                                        <li className="flex items-center ">
                                             <Link
                                                 to="/"
                                                 className="block py-2 pr-1 pl-1 text-[18px] font-normal text-black title_font hover:text-[#9B7BF7]"
@@ -50,13 +50,13 @@ function Navbar() {
                                                 Home
                                             </Link>
                                         </li>
-                                        {/* Dropdown menu */}
-
-                                        <button
-                                            type="button"
-                                            id="dropdownDefault"
-                                            data-dropdown-toggle="dropdown"
-                                            className="flex items-center py-2 pr-1 pl-1 text-[18px] font-normal text-black title_font hover:text-[#9B7BF7] "
+                                        <li className="relative flex items-center">
+                                        <div
+                                            onClick={() => {
+                                                toggleCollapse();
+                                                setIsOpen1(!isOpen1);
+                                            }}
+                                            className=" flex items-center py-2 pr-1 pl-1 text-[18px] font-normal text-black title_font hover:text-[#9B7BF7] "
                                         >
                                             Features
                                             <svg
@@ -74,106 +74,121 @@ function Navbar() {
                                                     d="M19 9l-7 7-7-7"
                                                 ></path>
                                             </svg>
-                                        </button>
-
-                                        {/* Dropdown Part */}
-                                        <div
-                                            id="dropdown"
-                                            className={`hidden z-10 bg-white rounded divide-y divide-gray-100 shadow title_font`}
-                                        >
-                                            <ul
-                                                className="py-1 text-[18px] text-[#0F1A2F] font-bold "
-                                                aria-labelledby="dropdownDefault"
-                                            >
-                                                <div className="grid grid-cols-2 gap-10">
-                                                    <Link
-                                                        to={"/analytics"}
-                                                        className="flex items-center hover:scale-105 duration-500 ease-in-out"
-                                                    >
-                                                        <img
-                                                            src="../../img/analytical.png"
-                                                            className="w-[60px] h-[60px]"
-                                                        />
-                                                        <p className="block py-2 px-4 hover:bg-gray-100 ">
-                                                            Advanced analytics
-                                                        </p>
-                                                    </Link>
-                                                    <Link
-                                                        to={"/callToAction"}
-                                                        className="flex items-center hover:scale-105 duration-500 ease-in-out"
-                                                    >
-                                                        <img
-                                                            src="../../img/section-2.png"
-                                                            className="w-[60px] h-[60px]"
-                                                        />
-                                                        <p
-                                                            className="block py-2 px-4 hover:bg-gray-100 "
-                                                        >
-                                                            Call-To-Action
-                                                        </p>
-                                                    </Link>
-                                                    <Link
-                                                        to={"/retarget"}
-                                                        className="flex items-center hover:scale-105 duration-500 ease-in-out"
-                                                    >
-                                                        <img
-                                                            src="../../img/analytical-1.png"
-                                                            className="w-[60px] h-[60px]"
-                                                        />
-                                                        <p
-                                                            className="block py-2 px-4 hover:bg-gray-100 "
-                                                        >
-                                                            Inbuilt retargeting
-                                                        </p>
-                                                    </Link>
-                                                    <Link
-                                                        to={"/testing"}
-                                                        className="flex items-center hover:scale-105 duration-500 ease-in-out"
-                                                    >
-                                                        <img
-                                                            src="../../img/section-3.png"
-                                                            className="w-[60px] h-[60px]"
-                                                        />
-                                                        <p
-                                                            className="block py-2 px-4 hover:bg-gray-100 "
-                                                        >
-                                                            A/B Testing
-                                                        </p>
-                                                    </Link>
-                                                    <Link
-                                                        to={"/code"}
-                                                        className="flex items-center hover:scale-105 duration-500 ease-in-out"
-                                                    >
-                                                        <img
-                                                            src="../../img/callToAction-3.png"
-                                                            className="w-[60px] h-[60px]"
-                                                        />
-                                                        <p
-                                                            className="block py-2 px-4 hover:bg-gray-100 "
-                                                        >
-                                                            QR Codes
-                                                        </p>
-                                                    </Link>
-                                                    <Link
-                                                        to={"/rotation"}
-                                                        className="flex items-center hover:scale-105 duration-500 ease-in-out"
-                                                    >
-                                                        <img
-                                                            src="../../img/analytical.png"
-                                                            className="w-[60px] h-[60px]"
-                                                        />
-                                                        <p
-                                                            className="block py-2 px-4 hover:bg-gray-100 "
-                                                        >
-                                                            Link Rotation
-                                                        </p>
-                                                    </Link>
-                                                </div>
-                                            </ul>
                                         </div>
+                                        <Transition
+                                        className="absolute top-20 w-[400px] -left-[120px]"
+                                            show={isOpen1}
+                                            enter="transition ease-out duration-700 transform"
+                                            enterFrom="opacity-0 scale-95"
+                                            enterTo="opacity-100 scale-100"
+                                            leave="transition ease-in duration-75 transform"
+                                            leaveFrom="opacity-100 scale-100"
+                                            leaveTo="opacity-0 scale-95"
+                                        >
+                                            {(ref) => (
+                                                 <div
+                                                 id="dropdown"
+                                                 className={`z-10 bg-white rounded divide-y divide-gray-100 shadow title_font`}
+                                             >
+                                                 <ul
+                                                     className="py-1 text-[18px] text-[#0F1A2F] font-bold "
+                                                     aria-labelledby="dropdownDefault"
+                                                 >
+                                                     <div className="grid grid-cols-2 gap-10">
+                                                         <Link
+                                                             to={"/analytics"}
+                                                             className="flex items-center hover:scale-105 duration-500 ease-in-out"
+                                                         >
+                                                             <img
+                                                                 src="../../img/analytical.png"
+                                                                 className="w-[60px] h-[60px]"
+                                                             />
+                                                             <p className="block py-2 px-4 hover:bg-gray-100 ">
+                                                                 Advanced analytics
+                                                             </p>
+                                                         </Link>
+                                                         <Link
+                                                             to={"/callToAction"}
+                                                             className="flex items-center hover:scale-105 duration-500 ease-in-out"
+                                                         >
+                                                             <img
+                                                                 src="../../img/section-2.png"
+                                                                 className="w-[60px] h-[60px]"
+                                                             />
+                                                             <p
+                                                                 className="block py-2 px-4 hover:bg-gray-100 "
+                                                             >
+                                                                 Call-To-Action
+                                                             </p>
+                                                         </Link>
+                                                         <Link
+                                                             to={"/retarget"}
+                                                             className="flex items-center hover:scale-105 duration-500 ease-in-out"
+                                                         >
+                                                             <img
+                                                                 src="../../img/analytical-1.png"
+                                                                 className="w-[60px] h-[60px]"
+                                                             />
+                                                             <p
+                                                                 className="block py-2 px-4 hover:bg-gray-100 "
+                                                             >
+                                                                 Inbuilt retargeting
+                                                             </p>
+                                                         </Link>
+                                                         <Link
+                                                             to={"/testing"}
+                                                             className="flex items-center hover:scale-105 duration-500 ease-in-out"
+                                                         >
+                                                             <img
+                                                                 src="../../img/section-3.png"
+                                                                 className="w-[60px] h-[60px]"
+                                                             />
+                                                             <p
+                                                                 className="block py-2 px-4 hover:bg-gray-100 "
+                                                             >
+                                                                 A/B Testing
+                                                             </p>
+                                                         </Link>
+                                                         <Link
+                                                             to={"/code"}
+                                                             className="flex items-center hover:scale-105 duration-500 ease-in-out"
+                                                         >
+                                                             <img
+                                                                 src="../../img/callToAction-3.png"
+                                                                 className="w-[60px] h-[60px]"
+                                                             />
+                                                             <p
+                                                                 className="block py-2 px-4 hover:bg-gray-100 "
+                                                             >
+                                                                 QR Codes
+                                                             </p>
+                                                         </Link>
+                                                         <Link
+                                                             to={"/rotation"}
+                                                             className="flex items-center hover:scale-105 duration-500 ease-in-out"
+                                                         >
+                                                             <img
+                                                                 src="../../img/analytical.png"
+                                                                 className="w-[60px] h-[60px]"
+                                                             />
+                                                             <p
+                                                                 className="block py-2 px-4 hover:bg-gray-100 "
+                                                             >
+                                                                 Link Rotation
+                                                             </p>
+                                                         </Link>
+                                                     </div>
+                                                 </ul>
+                                             </div>
+                                            )}
+                                        </Transition>
+                                        </li>
+                                        
+                                        
+                                        {/* Dropdown Part */}
 
                                         {/* Dropdown menu */}
-                                        <li className="flex items-center">
+                                        <li className="flex items-center ">
                                             <Link
                                                 to={"/getInTouch"}
                                                 className="block  pr-1 py-1 font-normal text-[18px] text-black  title_font hover:text-[#9B7BF7]"
@@ -181,7 +196,7 @@ function Navbar() {
                                                 Contact
                                             </Link>
                                         </li>
-                                        <li className="flex items-center">
+                                        <li className="flex items-center ">
                                             <Link
                                                 to={"/resource"}
                                                 className="block  pr-1 py-1 font-normal text-[18px] text-black title_font hover:text-[#9B7BF7] "
@@ -204,14 +219,14 @@ function Navbar() {
                                             to={"/early-access/offer"}
                                             className="flex items-center"
                                         >
-                                            <button className="block border border-gray-200 text-white title_font bg-[#9B7BF7] px-5 py-4 rounded-md font-normal text-[16px]  hover:text-white hover:scale-105 hover:bg-[#ED64A6] duration-500 ease-in-out">
+                                            <button className="block border border-gray-200 text-white title_font bg-[#9B7BF7]   px-1 md:px-2  md:py-4 rounded-md font-normal text-[16px]  hover:text-white hover:scale-105 hover:bg-[#ED64A6] duration-500 ease-in-out">
                                                 Get Early Access
                                             </button>
                                         </Link>
                                     </ul>
                                 </div>
                             </div>
-                            <div className="-mr-2 flex md:hidden">
+                            <div className="-mr-2 flex min-[1450px]:hidden">
                                 <button
                                     onClick={() => {
                                         toggleCollapse();
@@ -225,7 +240,6 @@ function Navbar() {
                                 </button>
                             </div>
                         </div>
-                    </div>
 
                     <Transition
                         show={isOpen}
@@ -235,10 +249,11 @@ function Navbar() {
                         leave="transition ease-in duration-75 transform"
                         leaveFrom="opacity-100 scale-100"
                         leaveTo="opacity-0 scale-95"
+                        className={'z-10'}
                     >
                         {(ref) => (
                             <div
-                                className="md:hidden border border-gray-200 rounded"
+                                className="min-[1450px]:hidden border border-gray-200 rounded"
                                 id="mobile-menu"
                             >
                                 <div
