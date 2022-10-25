@@ -29,6 +29,7 @@
                         <img src="../../img/logo.jpg" class="mr-3 h-9 md:h-9" alt="LinkDrip Logo" />
                         <span class="self-center text-[24px] text-[#9B7BF7] font-bold whitespace-nowrap title_font">LinkDrip</span>
                     </Link>
+                    
                     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                     <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-4 sm:space-x-2 md:mt-0 md:text-sm  md:border-0 ">
                         <li className='flex items-center'>
@@ -36,12 +37,13 @@
                         </li>
                         {/* Dropdown menu */}
                         
-                        <button type="button" id="dropdownDefault" data-dropdown-toggle="dropdown" class=" flex items-center py-2 pr-1 pl-1 text-[18px] font-normal text-black title_font hover:text-[#9B7BF7]" >
+                        <button type="button" id="dropdownDefault" data-dropdown-toggle="dropdown" class=" flex items-center py-2 pr-1 pl-1 text-[18px] font-normal text-black title_font hover:text-[#9B7BF7] " >
                             Features 
                             <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
+
                         {/* Dropdown Part */}
                         <div id="dropdown" class="hidden z-10 bg-white rounded divide-y divide-gray-100 shadow title_font">
                             <ul class="py-1 text-[18px] text-[#0F1A2F] font-bold " aria-labelledby="dropdownDefault">
@@ -73,6 +75,7 @@
                             </div>
                             </ul>
                         </div>
+                        
 
                         {/* Dropdown menu */}
                         <li className='flex items-center'>
@@ -148,6 +151,8 @@
                 </div>
                 )}
             </Transition>
+
+            
             </nav>
             </div>
             </>
