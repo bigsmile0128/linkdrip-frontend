@@ -50,9 +50,9 @@ function Resource(){
                 </div>
 
                 {/* Last Articles Sections */}
-                <div className='mt-10 md:mt-20 flex justify-between px-10 w-full md:w-2/3 m-auto '>
+                <div className='mt-10 md:mt-20 grid grid-cols-1 md:grid-cols-2 px-10 w-full md:w-2/3 m-auto '>
                     <p className='text-gray-700 text-[44px] title_font font-bold'>Last Articles</p>
-                    <div className='flex items-center gap-2'>
+                    <div className='grid grid-cols-2 md:grid-cols-4 items-center gap-2'>
                         <button className='px-7 py-4 bg-[#9B7BF7] rounded-md  text-white text-[20px] title_font hover:scale-105 duration-500 ease-in-out'>All</button>
                         <button className='px-7 py-4 bg-white border  rounded-md text-gray-700 text-[20px] title_font hover:bg-[#9B7BF7] hover:scale-105 duration-500 ease-in-out'>Growth</button>
                         <button className='px-7 py-4 bg-white border  rounded-md text-gray-700 text-[20px] title_font hover:bg-[#9B7BF7] hover:scale-105 duration-500 ease-in-out'>Marketing</button>

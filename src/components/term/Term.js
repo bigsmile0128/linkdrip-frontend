@@ -3,7 +3,7 @@ import './term.css'
 
 function Term(){
     return(
-        <div className='mt-10 md:mt-20 w-full p-5 md:w-2/3 border border-blue-500 m-auto title_font'>
+        <div className='mt-10 md:mt-20 w-full p-5 md:w-2/3 m-auto title_font'>
             <p className='text-[38px] text-[#0F1A2F] font-semibold'>Terms and Conditions</p>
             <p className='text-[20px] text-gray-500  mt-5'>Effective date: <label className='text-[#0F1A2F] font-bold'>Sep 12, 2022 </label></p>
             <p className='text-[20px] text-gray-500  mt-5'>These Terms and Conditions ("Terms", "Terms and Conditions") govern your relationship with linkdrip.io website (the "Service") operated by Highware Solutions ("us", "we", or "our").</p>

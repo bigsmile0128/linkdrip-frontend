@@ -54,8 +54,43 @@ function GetEarlyAccess(){
                             </div>
 
                             <div className='flex items-center gap-5 mt-1 md:mt-4'>
+                                <img src='../../img/tick.png' />
+                                <p className='text-[#3F4859] text-[18px] title_font font-semibold'>25 QR Codes</p>
+                            </div>
+                            {/* Responsive part */}
+                            <div className='md:hidden flex items-center gap-5 mt-1 md:mt-4'>
+                                <img src='../../img/tick.png' />
+                                <p className='text-[#3F4859] text-[18px] title_font font-semibold'>25 Call-To-Actions </p>
+                            </div>
+
+                            <div className='md:hidden flex items-center gap-5 mt-1 md:mt-4'>
+                                <img src='../../img/tick.png' />
+                                <p className='text-[#3F4859] text-[18px] title_font font-semibold'>A/B Testing </p>
+                            </div>
+
+                            <div className='md:hidden flex items-center gap-5 mt-1 md:mt-4'>
+                                <img src='../../img/tick.png' />
+                                <p className='text-[#3F4859] text-[18px] title_font font-semibold'>Link rotation </p>
+                            </div>
+
+                            <div className='md:hidden flex items-center gap-5 mt-1 md:mt-4'>
+                                <img src='../../img/minus.png' />
+                                <p className='text-[#3F4859] text-[18px] title_font font-semibold'>Linkdrip Pixel </p>
+                            </div>
+
+                            <div className='md:hidden flex items-center gap-5 mt-1 md:mt-4'>
                                 <img src='../../img/minus.png' />
                                 <p className='text-[#3F4859] text-[18px] title_font font-semibold'>Custom domains </p>
+                            </div>
+
+                            <div className='md:hidden flex items-center gap-5 mt-1 md:mt-4'>
+                                <img src='../../img/minus.png' />
+                                <p className='text-[#3F4859] text-[18px] title_font font-semibold'>Workspaces </p>
+                            </div>
+
+                            <div className='md:hidden flex items-center gap-5 mt-1 md:mt-4'>
+                                <img src='../../img/minus.png' />
+                                <p className='text-[#3F4859] text-[18px] title_font font-semibold'>Team members </p>
                             </div>
                         </div>  
 

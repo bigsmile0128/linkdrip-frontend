@@ -8,7 +8,7 @@ function Privacy(){
         <>
         <Header />
         <Navbar />
-        <div className='mt-10 md:mt-20 w-full p-5 md:w-2/3 border border-blue-500 m-auto title_font'>
+        <div className='mt-10 md:mt-20 w-full p-5 md:w-2/3  m-auto title_font'>
             <p className='text-[38px] text-[#0F1A2F] font-semibold'>Privacy Policy</p>
             <p className='text-[20px] text-gray-500  mt-5'>Effective date: <label className='text-[#0F1A2F] font-bold'>Sep 12, 2022 </label></p>
 
@@ -167,7 +167,9 @@ function Privacy(){
             <p className='text-[20px] text-gray-500 mt-5'>‍‍‍‍‍‍‍‍You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>  
             
             <p className='text-[38px] text-[#0F1A2F] font-semibold mt-10'>Contact Us</p>
-            <p className='text-[20px] text-gray-500 mt-5'>‍‍‍‍‍‍‍‍We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>  
+            <p className='text-[20px] text-gray-500 mt-5'>‍‍‍‍‍‍‍‍If you have any questions about these terms, please contact us:</p>  
+            <p className='text-[20px] text-gray-500 mt-5'>‍‍‍‍‍‍‍‍By email:<label className='text-[#9B7BF7] underline'> support@linkdrip.io</label></p>  
+
       </div>
        </>
     )

@@ -20,56 +20,56 @@ function Footer() {
                 <div>
                     <p class="mb-6  font-bold text-[20px] text-gray-900 title_font">Company</p>
                     <ul class="text-gray-500 grid grid-cols-2 gap-2 md:gap-y-5 md:gap-x-20 ">
-                        <li class="mb-6 md:mt-5">
+                        <Link to={'/early-access/offer'} class="mb-6 md:mt-5">
                             <a href="https://flowbite.com/" class="text-[18px] font-semibold hover:text-[#9B7BF7] title_font">Sign in</a>
-                        </li>
+                        </Link>
 
-                        <li class="mb-6 md:mt-5">
+                        <Link to={'/early-access/offer'} class="mb-6 md:mt-5">
                             <a href="https://flowbite.com/" class="text-[18px] font-semibold hover:text-[#9B7BF7] title_font">Pricing</a>
-                        </li>
+                        </Link>
 
-                        <li class="mb-6">
+                        <Link to={'/getInTouch'} class="mb-6">
                             <a href="https://flowbite.com/" class="text-[18px] font-semibold hover:text-[#9B7BF7] title_font">Contact</a>
-                        </li>
+                        </Link>
 
-                        <li class="mb-6">
+                        <Link to={'/getAllFeatures'} class="mb-6">
                             <a href="https://flowbite.com/" class="text-[18px] font-semibold hover:text-[#9B7BF7] title_font">Features</a>
-                        </li>
+                        </Link>
 
-                        <li class="mb-6">
+                        <Link to={'/resource'} class="mb-6">
                             <a href="https://flowbite.com/" class="text-[18px] font-semibold hover:text-[#9B7BF7] title_font">Blog</a>
-                        </li>
+                        </Link>
 
-                        <li class="mb-6">
+                        <Link to={'/term'} class="mb-6">
                             <a href="https://flowbite.com/" class="text-[18px] font-semibold hover:text-[#9B7BF7] v">Terms</a>
-                        </li>
+                        </Link>
 
-                        <li class="mb-6 col-span-2 text-left">
+                        <Link to={'/privacy'} class="mb-6 col-span-2 text-left">
                             <a href="https://flowbite.com/" class="text-[18px] font-semibold hover:text-[#9B7BF7] title_font">Privacy</a>
-                        </li>
+                        </Link>
                     </ul>
                 </div>
                 <div>
                     <h2 class="mb-6  text-[20px] font-bold title_font text-gray-900">Product</h2>
                     <ul class="text-gray-500 grid grid-cols-2 md:grid-cols-1 gap-2 md:gap-y-5 md:gap-x-20">
-                        <li class="mb-6 md:mt-5">
+                        <Link to={'/analytics'} class="mb-6 md:mt-5">
                             <a href="https://github.com/themesberg/flowbite" class="text-[18px] font-semibold hover:text-[#9B7BF7] title_font">Advanced analytics</a>
-                        </li>
-                        <li class="mb-6">
+                        </Link>
+                        <Link to={'/retarget'} class="mb-6">
                             <a href="https://discord.gg/4eeurUVvTy" class="text-[18px] font-semibold hover:text-[#9B7BF7] title_font">Inbuilt retargeting</a>
-                        </li>
-                        <li class="mb-6">
+                        </Link>
+                        <Link to={'/code'} class="mb-6">
                             <a href="https://github.com/themesberg/flowbite" class="text-[18px] font-semibold hover:text-[#9B7BF7] title_font">QR Codes</a>
-                        </li>
-                        <li class="mb-6">
+                        </Link>
+                        <Link to={'/callToAction'} class="mb-6">
                             <a href="https://discord.gg/4eeurUVvTy" class="text-[18px] font-semibold hover:text-[#9B7BF7] title_font">Call-To-Action</a>
-                        </li>
-                        <li class="mb-6">
+                        </Link>
+                        <Link to={'/testing'} class="mb-6">
                             <a href="https://github.com/themesberg/flowbite" class="text-[18px] font-semibold hover:text-[#9B7BF7] title_font">A/B Testing</a>
-                        </li>
-                        <li class="mb-6">
+                        </Link>
+                        <Link to={'/rotation'} class="mb-6">
                             <a href="https://discord.gg/4eeurUVvTy" class="text-[18px] font-semibold hover:text-[#9B7BF7] title_font">Link rotation</a>
-                        </li>
+                        </Link>
                     </ul>
                 </div>
                 <div>
