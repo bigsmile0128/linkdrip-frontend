@@ -16,7 +16,7 @@ function GetEarlyAccess(){
                     <p className='text-gray-500 text-[18px] md:text-[20px]  font-semibold text-center title_font'>Get your hands on LinkDrip early by purchasing one of our Early Access Deals.</p>
             </div>
             {/* Five star div section */}
-            <div className='md:mt-10 md:m-auto md:w-[850px] rounded-[30px] border m-2 p-4 md:p-6 border-[#FFCDD0] bg-[#FFE4E5]' rounded-xl>
+            <div className='md:mt-10 md:m-auto md:w-[850px] rounded-[30px] border m-2 p-4 md:p-6 border-[#FFCDD0] bg-[#FFE4E5]'>
                 <div className='flex items-center gap-10 md:gap-5'>
                     <img src='../../img/star.png'/>
                     <div className=''>
@@ -154,230 +154,230 @@ function GetEarlyAccess(){
                 </div>
                 {/* Table section */}
                 <div className='hidden md:block md:w-2/3 m-auto mt-10 md:mt-20'>
-                <div class="overflow-x-auto">
+                <div className="overflow-x-auto">
                     {/* Table one */}
-                    <table class="w-full  text-center title_font">
-                        <thead class="text-xs text-gray-700">
+                    <table className="w-full  text-center title_font">
+                        <thead className="text-xs text-gray-700">
                             <tr>
-                                <th scope="col" class="py-3 px-6">
+                                <th scope="col" className="py-3 px-6">
 
                                 </th>
-                                <th scope="col" class="py-3 px-6">
+                                <th scope="col" className="py-3 px-6">
                                     <p className='text-[22px] text-gray-500 font-semibold'>Early Access Deal</p>
                                     <p className='text-[45px] text-[#0F1A2F] font-bold mt-6'>$75</p>
                                 </th>
-                                <th scope="col" class="py-3 px-6">
+                                <th scope="col" className="py-3 px-6">
                                     <p className='text-[22px] text-[#9B7BF7] font-semibold'>Early Access Deal + Plus</p>
                                     <p className='text-[45px] text-[#0F1A2F] font-bold mt-6'>$150</p>
                                 </th>
                             </tr>
                             <tr>
-                                <td scope="col" class="text-left">
+                                <td scope="col" className="text-left">
                                     <p className='text-[#0F1A2F] font-bold text-[22px] pb-10'>Basics</p>
                                 </td>
-                                <th scope="col" class="py-3 px-6">
+                                <th scope="col" className="py-3 px-6">
                                 </th>
-                                <th scope="col" class="py-3 px-6">
+                                <th scope="col" className="py-3 px-6">
                                 </th>
                             </tr>
                         </thead>
                         <tbody>
                             {/* First section */}
-                            <tr class="bg-white border-b ">
-                                <td scope="row" class="text-left">
+                            <tr className="bg-white border-b ">
+                                <td scope="row" className="text-left">
                                     <div className='flex items-center gap-4'>
                                         <p className='text-[18px] text-[#6E7191] font-semibold '>All analytics features</p>
                                         <img src='../../img/square.png'/>
                                     </div> 
                                 </td>
-                                <td class="py-4 px-6  ">
+                                <td className="py-4 px-6  ">
                                     <img src='../../img/tick.png' className='m-auto'/>
                                 </td>
-                                <td class="py-4 px-6  ">
+                                <td className="py-4 px-6  ">
                                     <img src='../../img/tick.png' className='m-auto'/>
                                 </td>
                             </tr>
 
-                            <tr class="bg-white border-b">
-                                <td scope="row" class="text-left">
+                            <tr className="bg-white border-b">
+                                <td scope="row" className="text-left">
                                     <div className='flex items-center gap-4'>
                                         <p className='text-[18px] text-[#6E7191] font-semibold '>Link redirects</p>
                                         <img src='../../img/square.png'/>
                                     </div> 
                                 </td>
-                                <td class="py-4 px-6">
+                                <td className="py-4 px-6">
                                     <p className='text-[18px] text-[#6E7191] font-semibold '>Unlimited</p>
                                 </td>
-                                <td class="py-4 px-6">
+                                <td className="py-4 px-6">
                                     <p className='text-[18px] text-[#6E7191] font-semibold '>Unlimited</p>
                                 </td>
                             </tr>
 
-                            <tr class="bg-white border-b">
-                                <td scope="row" class="text-left">
+                            <tr className="bg-white border-b">
+                                <td scope="row" className="text-left">
                                     <div className='flex items-center gap-4'>
                                         <p className='text-[18px] text-[#6E7191] font-semibold '>Track visits/month</p>
                                         <img src='../../img/square.png'/>
                                     </div> 
                                 </td>
-                                <td class="py-4 px-6">
+                                <td className="py-4 px-6">
                                     <p className='text-[18px] text-[#6E7191] font-semibold '>50,000 </p>
                                 </td>
-                                <td class="py-4 px-6">
+                                <td className="py-4 px-6">
                                     <p className='text-[18px] text-[#6E7191] font-semibold '>Unlimited</p>
                                 </td>
                             </tr>
 
-                            <tr class="bg-white border-b">
-                                <td scope="row" class="text-left">
+                            <tr className="bg-white border-b">
+                                <td scope="row" className="text-left">
                                     <div className='flex items-center gap-4'>
                                         <p className='text-[18px] text-[#6E7191] font-semibold '>QR codes</p>
                                         <img src='../../img/square.png'/>
                                     </div> 
                                 </td>
-                                <td class="py-4 px-6">
+                                <td className="py-4 px-6">
                                     <p className='text-[18px] text-[#6E7191] font-semibold '>25</p>
                                 </td>
-                                <td class="py-4 px-6">
+                                <td className="py-4 px-6">
                                     <p className='text-[18px] text-[#6E7191] font-semibold '>Unlimited</p>
                                 </td>
                             </tr>
 
-                            <tr class="bg-white border-b">
-                                <td scope="row" class="text-left">
+                            <tr className="bg-white border-b">
+                                <td scope="row" className="text-left">
                                     <div className='flex items-center gap-4'>
                                         <p className='text-[18px] text-[#6E7191] font-semibold '>Call-To-Actions</p>
                                         <img src='../../img/square.png'/>
                                     </div> 
                                 </td>
-                                <td class="py-4 px-6">
+                                <td className="py-4 px-6">
                                     <p className='text-[18px] text-[#6E7191] font-semibold '>25</p>
                                 </td>
-                                <td class="py-4 px-6">
+                                <td className="py-4 px-6">
                                     <p className='text-[18px] text-[#6E7191] font-semibold '>Unlimited</p>
                                 </td>
                             </tr>
                             {/* Second Section */}
                     
                             <tr className=''>
-                                <td scope="col" class="text-left">
+                                <td scope="col" className="text-left">
                                     <p className='text-[#0F1A2F] font-bold text-[22px] pt-20 pb-7'>Advanced</p>
                                 </td>
-                                <th scope="col" class="py-3 px-6">
+                                <th scope="col" className="py-3 px-6">
                                 </th>
-                                <th scope="col" class="py-3 px-6">
+                                <th scope="col" className="py-3 px-6">
                                 </th>
                             </tr>
-                            <tr class="bg-white border-b ">
-                                <td scope="row" class="text-left ">
+                            <tr className="bg-white border-b ">
+                                <td scope="row" className="text-left ">
                                     <div className='flex items-center gap-4'>
                                         <p className='text-[18px] text-[#6E7191] font-semibold '>Retargeting pixelss</p>
                                         <img src='../../img/square.png'/>
                                     </div> 
                                 </td>
-                                <td class="py-4 px-6  ">
+                                <td className="py-4 px-6  ">
                                     <p className='text-[18px] text-[#6E7191] font-semibold '>2</p>
                                 </td>
-                                <td class="py-4 px-6  ">
+                                <td className="py-4 px-6  ">
                                     <p className='text-[18px] text-[#6E7191] font-semibold '>Unlimited</p>
                                 </td>
                             </tr>
 
-                            <tr class="bg-white border-b">
-                                <td scope="row" class="text-left">
+                            <tr className="bg-white border-b">
+                                <td scope="row" className="text-left">
                                     <div className='flex items-center gap-4'>
                                         <p className='text-[18px] text-[#6E7191] font-semibold '>A/B testing</p>
                                         <img src='../../img/square.png'/>
                                     </div> 
                                 </td>
-                                <td class="py-4 px-6">
+                                <td className="py-4 px-6">
                                     <img src='../../img/tick.png' className='m-auto'/>
                                 </td>
-                                <td class="py-4 px-6">
+                                <td className="py-4 px-6">
                                     <img src='../../img/tick.png' className='m-auto'/>
                                 </td>
                             </tr>
 
-                            <tr class="bg-white border-b">
-                                <td scope="row" class="text-left">
+                            <tr className="bg-white border-b">
+                                <td scope="row" className="text-left">
                                     <div className='flex items-center gap-4'>
                                         <p className='text-[18px] text-[#6E7191] font-semibold '>Link rotation</p>
                                         <img src='../../img/square.png'/>
                                     </div> 
                                 </td>
-                                <td class="py-4 px-6">
+                                <td className="py-4 px-6">
                                     <img src='../../img/tick.png' className='m-auto'/>
                                 </td>
-                                <td class="py-4 px-6">
+                                <td className="py-4 px-6">
                                     <img src='../../img/tick.png' className='m-auto'/>
                                 </td>
                             </tr>
 
-                            <tr class="bg-white border-b">
-                                <td scope="row" class="text-left">
+                            <tr className="bg-white border-b">
+                                <td scope="row" className="text-left">
                                     <div className='flex items-center gap-4'>
                                         <p className='text-[18px] text-[#6E7191] font-semibold '>LinkDrip Pixel</p>
                                         <img src='../../img/square.png'/>
                                     </div> 
                                 </td>
-                                <td class="py-4 px-6">
+                                <td className="py-4 px-6">
                                     <img src='../../img/minus.png' className='m-auto'/>
                                 </td>
-                                <td class="py-4 px-6">
+                                <td className="py-4 px-6">
                                     <img src='../../img/tick.png' className='m-auto'/>
                                 </td>
                             </tr>
 
-                            <tr class="bg-white border-b">
-                                <td scope="row" class="text-left">
+                            <tr className="bg-white border-b">
+                                <td scope="row" className="text-left">
                                     <div className='flex items-center gap-4'>
                                         <p className='text-[18px] text-[#6E7191] font-semibold '>Custom domains</p>
                                         <img src='../../img/square.png'/>
                                     </div> 
                                 </td>
-                                <td class="py-4 px-6">
+                                <td className="py-4 px-6">
                                     <img src='../../img/minus.png' className='m-auto'/>
                                 </td>
-                                <td class="py-4 px-6">
+                                <td className="py-4 px-6">
                                     <p className='text-[18px] text-[#6E7191] font-semibold '>10</p>
                                 </td>
                             </tr>
                             {/* Third table sections */}
                             <tr className=''>
-                                <td scope="col" class="text-left">
+                                <td scope="col" className="text-left">
                                     <p className='text-[#0F1A2F] font-bold text-[22px] pt-20 pb-7'>Collaboration</p>
                                 </td>
-                                <th scope="col" class="py-3 px-6">
+                                <th scope="col" className="py-3 px-6">
                                 </th>
-                                <th scope="col" class="py-3 px-6">
+                                <th scope="col" className="py-3 px-6">
                                 </th>
                             </tr>
-                            <tr class="bg-white border-b ">
-                                <td scope="row" class="text-left ">
+                            <tr className="bg-white border-b ">
+                                <td scope="row" className="text-left ">
                                     <div className='flex items-center gap-4'>
                                         <p className='text-[18px] text-[#6E7191] font-semibold '>Workspaces</p>
                                         <img src='../../img/square.png'/>
                                     </div> 
                                 </td>
-                                <td class="py-4 px-6  ">
+                                <td className="py-4 px-6  ">
                                     <img src='../../img/minus.png' className='m-auto'/>
                                 </td>
-                                <td class="py-4 px-6  ">
+                                <td className="py-4 px-6  ">
                                     <p className='text-[18px] text-[#6E7191] font-semibold '>10</p>
                                 </td>
                             </tr>
 
-                            <tr class="bg-white border-b">
-                                <td scope="row" class="text-left">
+                            <tr className="bg-white border-b">
+                                <td scope="row" className="text-left">
                                     <div className='flex items-center gap-4'>
                                         <p className='text-[18px] text-[#6E7191] font-semibold '>Members/workspace</p>
                                         <img src='../../img/square.png'/>
                                     </div> 
                                 </td>
-                                <td class="py-4 px-6">
+                                <td className="py-4 px-6">
                                     <img src='../../img/minus.png' className='m-auto'/>
                                 </td>
-                                <td class="py-4 px-6">
+                                <td className="py-4 px-6">
                                     <p className='text-[18px] text-[#6E7191] font-semibold '>5</p>
                                 </td>
                             </tr>
