@@ -7,8 +7,8 @@ function Footer() {
     <footer class="m-auto md:w-2/3  md:p-6 mt-5 md:mt-20">
         <div class="md:flex md:justify-between px-10 md:px-0">
             <div class="mb-6 md:mb-0">
-                <Link href="#" class="flex items-center gap-2 hover:scale-105 md:hover:scale-110 duration-700 ease-in-out">
-                    <img src="./img/logo.jpg" class="mr-3 h-9 md:h-9" alt="LinkDrip Logo" />
+                <Link to={'/'} class="flex items-center gap-2 hover:scale-105 md:hover:scale-110 duration-700 ease-in-out">
+                    <img src="../../img/logo.jpg" class="mr-3 h-9 md:h-9" alt="LinkDrip Logo" />
                     <span class="self-center text-[24px] text-[#9B7BF7] font-bold whitespace-nowrap title_font">LinkDrip</span>
                 </Link>
                 <div className='md:mt-10'>

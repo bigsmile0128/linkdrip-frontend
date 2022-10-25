@@ -22,9 +22,9 @@ function Dashboard() {
                         <p className='text-[16px] md:text-[18px] text-[#6E7191] font-light md:font-bold title_font'>Analytics, A/B testing, ad retargeting and Call-To-Action overlays.</p>
                         <p className='text-[16px] md:text-[18px] text-[#6E7191] font-light md:font-bold title_font'>All from a simple, <b>short link.</b></p>
                         <div className='grid grid-cols-1 md:grid-cols-2 w-full mt-10'>
-                            <div >
+                            <Link to={'/early-access/offer'}>
                                 <button className='w-[92%] md:w-auto border md:float-right title_font border-gray-200 text-white bg-[#9B7BF7]  px-20 md:px-10 py-4 md:py-6 rounded-md md:-ml-5 font-normal text-[18px]  hover:text-white hover:scale-105 hover:bg-[#ED64A6] duration-500 ease-in-out'>Get Early Access</button>
-                            </div>
+                            </Link>
                             <div>
                                 <button href="#" class="w-[92%] md:float-left md:w-auto border title_font border-gray-200 px-10 py-4  mt-2 md:mt-0 md:py-6 md:ml-2 rounded-md font-normal text-[18px] text-black hover:text-white hover:scale-105 hover:bg-[#ED64A6] duration-500 ease-in-out">Learn more</button>
                             </div>
@@ -121,12 +121,12 @@ function Dashboard() {
                 </div>
                 {/* button group section */}
                 <div className='grid grid-cols-1 md:grid-cols-2 w-full mt-10 text-center'>
-                    <div >
+                    <Link to={'/early-access/offer'}>
                         <button className='w-[92%] md:w-auto border md:float-right title_font border-gray-200 text-white bg-[#9B7BF7]  px-20 md:px-14 py-4 md:py-6 rounded-md md:-ml-5 font-normal text-[18px]  hover:text-white hover:scale-105 hover:bg-[#ED64A6] duration-500 ease-in-out'>Get Early Access</button>
-                    </div>
-                    <div>
-                        <button href="#" class="w-[92%] md:float-left md:w-auto title_font border border-gray-200 px-20 md:px-14 py-4  mt-2 md:mt-0 md:py-6 md:ml-2 rounded-md font-normal text-[18px] text-black hover:text-white hover:scale-105 hover:bg-[#ED64A6] duration-500 ease-in-out">Get All features</button>
-                    </div>
+                    </Link>
+                    <Link to={'/getAllFeatures'}>
+                        <button href="#" class="w-[92%] md:float-left md:w-auto title_font border border-gray-200 px-20 md:px-14 py-4  mt-2 md:mt-0 md:py-6 md:ml-2 rounded-md font-normal text-[18px] text-black hover:text-white hover:scale-105 hover:bg-[#ED64A6] duration-500 ease-in-out">Explore All features</button>
+                    </Link>
                 </div>
                 {/* calling action section */}
                 {/* Simple yet text section */}
@@ -224,9 +224,9 @@ function Dashboard() {
                     </div>
                 </div>
                 
-                <div className='grid place-items-center'>
+                <Link to={'/early-access/offer'} className='grid place-items-center'>
                     <button className='w-[92%] md:w-auto border border-gray-200 title_font text-white bg-[#9B7BF7]  px-20 md:px-14 py-4 md:py-6 rounded-md  font-normal text-[18px]  hover:text-white hover:scale-105 hover:bg-[#ED64A6] duration-500 ease-in-out'>Get Early Access</button>
-                </div>
+                </Link>
 
                 {/* Simple yet text section */}
                 <div className='w-full md:w-2/3 m-auto mt-20 md:mt-40'>
@@ -277,9 +277,9 @@ function Dashboard() {
                     </div>
                 </div>
                 
-                <div className='grid place-items-center mt-[350px]'>
+                <Link to={'/early-access/offer'} className='grid place-items-center mt-[350px]'>
                     <button className='w-[92%] md:w-auto border border-gray-200 title_font text-white bg-[#9B7BF7]  px-20 md:px-14 py-4 md:py-6 rounded-md  font-normal text-[18px]  hover:text-white hover:scale-105 hover:bg-[#ED64A6] duration-500 ease-in-out'>Get Early Access</button>
-                </div>
+                </Link>
 
                 {/* background sections */}
                 <div className='bg-[#9B7BF7] w-full h-[850px] md:h-[1250px]'>
@@ -290,9 +290,9 @@ function Dashboard() {
                         <p className='text-white text-[18px] md:text-[20px]  font-semibold text-center md:mt-4 title_font'>LinkDrip supports a set of advanced use cases, such as adding your custom domain, injecting custom</p>
                         <p className='text-white text-[18px] md:text-[20px]  font-semibold text-center title_font'>JavaScript into your link, and using the LinkDrip Pixel.</p>
                     </div>
-                    <div className='grid place-items-center mt-40'>
+                    <Link to={'/early-access/offer'} className='grid place-items-center mt-40'>
                         <button className='w-[92%] md:w-auto border border-gray-200 title_font font-bold text-[#9B7BF7] bg-white  px-20 md:px-14 py-4 md:py-6 rounded-md text-[18px]  hover:text-white hover:scale-105 hover:bg-[#ED64A6] duration-500 ease-in-out'>Get Early Access</button>
-                    </div>
+                    </Link>
 
                     {/* Dashboard Slide image section */}
                     <div className='md:w-2/3 m-auto'>
